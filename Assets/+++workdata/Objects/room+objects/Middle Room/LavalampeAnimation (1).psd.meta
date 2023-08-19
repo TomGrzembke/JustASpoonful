@@ -1,0 +1,694 @@
+fileFormatVersion: 2
+guid: 201507471e6baeb43a18e7fd0086c317
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2620
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834660df18b94be448b2fefe41ead6f0
+      internalID: 310766105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 2620
+        width: 275
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ab27daeffc3764791e45986ff3dadf
+      internalID: -845949387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_2
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 2620
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a026936008543848ba7aafe7e4ad6a4
+      internalID: 1846511670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 2620
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cede7dee9d9533e40a388f5eca060379
+      internalID: -81502495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2620
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3003b23ac7b9644a440d8fef864086
+      internalID: -552731789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 2620
+        width: 275
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee93b1d26403a104babc6961822574ed
+      internalID: -1433117481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_6
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 2620
+        width: 275
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35006224759f49540b094c24a7ba6d5d
+      internalID: 777599466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1799
+        width: 276
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c4f394cdb372742b73daf9bb6f2007
+      internalID: -394265858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_8
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1799
+        width: 275
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9dc33cc7f8fbc48967d47ccfd9e3b5
+      internalID: 127201574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_9
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1799
+        width: 275
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e35227b3af76bb41b08fc949660545d
+      internalID: -925836083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1799
+        width: 276
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f26c79b75ec524eb43089cf6e7c57e
+      internalID: 1201614321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1799
+        width: 276
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dca3c8f312c3c14880bb92fd67279ee
+      internalID: -46667670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1799
+        width: 275
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6567a7aab26c6334ea04833cc9a6cf70
+      internalID: -869221041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_13
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1799
+        width: 275
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d183c5190ac194ebfbfa3ee593c16b
+      internalID: 1804145369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 977
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ce0e1897d6e1646b856dd5f9f67532
+      internalID: -1760534510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 977
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7338b56fb137f7048a31a919db765926
+      internalID: 1921040101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_16
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 969
+        width: 276
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9988daaf6ace34d4087ec464aa02a477
+      internalID: -840979471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 969
+        width: 276
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df348d385065b604facd62d88692f0f7
+      internalID: -1206137137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 969
+        width: 275
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c79cc4d94c2fa2428286a3d6ffb46ae
+      internalID: -823874819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_19
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 977
+        width: 275
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea77dfb4f276dec4191eb053300b7cf2
+      internalID: -196891865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_20
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 977
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b5f8fa31d33954499859bf0f086a61
+      internalID: 616725450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 157
+        width: 275
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8858c152c0fb84046a7d2f33cef31a6b
+      internalID: -206065562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_22
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 157
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313ad64beaa11c24f883608435b2cec1
+      internalID: 1616309969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_23
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 157
+        width: 275
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93c1258d05fd2c4998c2d122a3d5a21
+      internalID: -1991650181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 157
+        width: 276
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bf2f72ff95c1e40a327d65e6e69de6
+      internalID: 1232303610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavalampeAnimation (1)_25
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 157
+        width: 282
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49370099999d7504d9594e04846c1e54
+      internalID: -534293156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      LavalampeAnimation (1)_1: -845949387
+      LavalampeAnimation (1)_8: 127201574
+      LavalampeAnimation (1)_4: -552731789
+      LavalampeAnimation (1)_7: -394265858
+      LavalampeAnimation (1)_3: -81502495
+      LavalampeAnimation (1)_11: -46667670
+      LavalampeAnimation (1)_13: 1804145369
+      LavalampeAnimation (1)_22: 1616309969
+      LavalampeAnimation (1)_6: 777599466
+      LavalampeAnimation (1)_16: -840979471
+      LavalampeAnimation (1)_19: -196891865
+      LavalampeAnimation (1)_25: -534293156
+      LavalampeAnimation (1)_12: -869221041
+      LavalampeAnimation (1)_14: -1760534510
+      LavalampeAnimation (1)_21: -206065562
+      LavalampeAnimation (1)_9: -925836083
+      LavalampeAnimation (1)_0: 310766105
+      LavalampeAnimation (1)_24: 1232303610
+      LavalampeAnimation (1)_20: 616725450
+      LavalampeAnimation (1)_10: 1201614321
+      LavalampeAnimation (1)_23: -1991650181
+      LavalampeAnimation (1)_2: 1846511670
+      LavalampeAnimation (1)_15: 1921040101
+      LavalampeAnimation (1)_17: -1206137137
+      LavalampeAnimation (1)_18: -823874819
+      LavalampeAnimation (1)_5: -1433117481
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

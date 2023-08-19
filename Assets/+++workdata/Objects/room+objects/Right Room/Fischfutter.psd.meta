@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 94c09973c5863564ea7f0ffe7c654ed9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fischfutter_0
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 354
+        width: 1300
+        height: 1949
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -493, y: -974.5}
+        - {x: -560, y: -954.5}
+        - {x: -554, y: 448.5}
+        - {x: -650, y: 534.5}
+        - {x: -650, y: 974.5}
+        - {x: 650, y: 974.5}
+        - {x: 650, y: -974.5}
+        - {x: 650, y: -974.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812b4da80e3024b4fa06709a89735db3
+      internalID: -1813094541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fischfutter_1
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 1601
+        width: 944
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -472, y: -336}
+        - {x: -472, y: 128}
+        - {x: 99, y: 331}
+        - {x: 472, y: 336}
+        - {x: 472, y: -336}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18aca12bfb874841831a95e2871b7de
+      internalID: -1567242531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fischfutter_7
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 799
+        width: 742
+        height: 741
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: -370.5}
+        - {x: -170, y: -367.5}
+        - {x: -371, y: -60.5}
+        - {x: 52, y: 370.5}
+        - {x: 328, y: 256.5}
+        - {x: 371, y: 70.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5884e8e225951f74f870182bf4fefeeb
+      internalID: 1683141847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fischfutter_12
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 88
+        width: 370
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -123, y: -291.5}
+        - {x: -138, y: -244.5}
+        - {x: -141, y: 60.5}
+        - {x: -185, y: 93.5}
+        - {x: -185, y: 295.5}
+        - {x: 185, y: 295.5}
+        - {x: 185, y: -295.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c286093b9f4bbb4ea4c8c9e42a7afbc
+      internalID: -1935034126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fischfutter_13: 1307249066
+      Fischfutter_5: -1253420729
+      Fischfutter_12: -1935034126
+      Fischfutter_9: -1196210624
+      Fischfutter_14: -1071444327
+      Fischfutter_7: 1683141847
+      Fischfutter_8: -1924337023
+      Fischfutter_6: -245265407
+      Fischfutter_4: -1699278471
+      Fischfutter_1: -1567242531
+      Fischfutter_3: 1415544366
+      Fischfutter_2: -1506549141
+      Fischfutter_11: -2128029906
+      Fischfutter_10: 1874202999
+      Fischfutter_0: -1813094541
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: cf79e43f5b48d3244a7cc912819e7759
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Teebox_0
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1237
+        width: 394
+        height: 290
+      alignment: 9
+      pivot: {x: 0.5670634, y: 0.27763715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30503a098d011542b401df2bd8ffa61
+      internalID: 1092532422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_1
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 1237
+        width: 452
+        height: 497
+      alignment: 9
+      pivot: {x: 0.6209198, y: 0.15950365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b706c383b4b5434409ba62b310f16fd1
+      internalID: 1055429989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_2
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 1523
+        width: 191
+        height: 201
+      alignment: 9
+      pivot: {x: 0.31742498, y: 0.6123654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189f07eeccab03a468fcd2c8229c65e2
+      internalID: -1891469587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_3
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 1522
+        width: 192
+        height: 200
+      alignment: 9
+      pivot: {x: 0.31837463, y: 0.61112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a317f41223007d4479fb7bf5ffeb096e
+      internalID: 1044586516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_4
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1518
+        width: 191
+        height: 199
+      alignment: 9
+      pivot: {x: 0.3231003, y: 0.61712617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9021473fb93e3d74fb577d6658b342d8
+      internalID: -1538530032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_5
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 1280
+        width: 191
+        height: 201
+      alignment: 9
+      pivot: {x: 0.3152942, y: 0.6114071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8597f87671b117249bd04cc7512f5844
+      internalID: -1315742777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_6
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 1280
+        width: 192
+        height: 201
+      alignment: 9
+      pivot: {x: 0.32835898, y: 0.6114071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d51912b22e30f04da9a50f7468bddef
+      internalID: 2007961046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_7
+      rect:
+        serializedVersion: 2
+        x: 2892
+        y: 1280
+        width: 192
+        height: 201
+      alignment: 9
+      pivot: {x: 0.31965256, y: 0.6115832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e872d06d3f4f12f478e954a94bcafe72
+      internalID: 1563991034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_8
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 566
+        width: 370
+        height: 574
+      alignment: 9
+      pivot: {x: 0.34198824, y: 0.26716554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -185, y: -255}
+        - {x: -185, y: -201}
+        - {x: -96, y: 287}
+        - {x: 185, y: 287}
+        - {x: 185, y: 198}
+        - {x: -27, y: -287}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e37afd683cce14a98238cda0ea4754
+      internalID: -1899620574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_9
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 544
+        width: 370
+        height: 574
+      alignment: 9
+      pivot: {x: 0.3422845, y: 0.26691908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -185, y: -257}
+        - {x: -185, y: -216}
+        - {x: -46, y: 287}
+        - {x: 185, y: 287}
+        - {x: 185, y: 186}
+        - {x: -13, y: -287}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae85e3cf514f1a045a4cd76b6a27d9b0
+      internalID: 1916952688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_10
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 523
+        width: 368
+        height: 576
+      alignment: 9
+      pivot: {x: 0.3405878, y: 0.2667107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -184, y: -288}
+        - {x: -184, y: -204}
+        - {x: -86, y: 288}
+        - {x: 184, y: 288}
+        - {x: 184, y: -288}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60085859bcab5e4194d1187c7059036
+      internalID: -1431238245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_11
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 528
+        width: 372
+        height: 574
+      alignment: 9
+      pivot: {x: 0.32942775, y: 0.25808248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: -287}
+        - {x: -186, y: -287}
+        - {x: -186, y: -236}
+        - {x: -138, y: 287}
+        - {x: 186, y: 287}
+        - {x: 38, y: -280}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c902b6aa098d1164db0bd931a3607d5e
+      internalID: -764448633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_12
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 525
+        width: 373
+        height: 574
+      alignment: 9
+      pivot: {x: 0.3418715, y: 0.2668657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.5, y: -287}
+        - {x: -186.5, y: -258}
+        - {x: -186.5, y: -188}
+        - {x: -109.5, y: 287}
+        - {x: 186.5, y: 287}
+        - {x: 186.5, y: 231}
+        - {x: -11.5, y: -287}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc5329fe437fba4aaa31856e654c3a2
+      internalID: 496733836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teebox_13
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 525
+        width: 371
+        height: 574
+      alignment: 9
+      pivot: {x: 0.3383605, y: 0.26413208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: -287}
+        - {x: -147.5, y: -287}
+        - {x: -185.5, y: -239}
+        - {x: -106.5, y: 79}
+        - {x: 64.5, y: 287}
+        - {x: 185.5, y: 287}
+        - {x: 185.5, y: 200}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecea4dd1d02861849af68d15d252eaed
+      internalID: -372714189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Teebox_6: 2007961046
+      Teebox_8: -1899620574
+      Teebox_12: 496733836
+      Teebox_10: -1431238245
+      Teebox_4: -1538530032
+      Teebox_11: -764448633
+      Teebox_7: 1563991034
+      Teebox_0: 1092532422
+      Teebox_13: -372714189
+      Teebox_5: -1315742777
+      Teebox_9: 1916952688
+      Teebox_3: 1044586516
+      Teebox_1: 1055429989
+      Teebox_2: -1891469587
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 4b983e4e98829994ab3176f1edc1cdb9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 22}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Seals_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 770
+        width: 1856
+        height: 1084
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 796, y: -424}
+        - {x: 260, y: -541}
+        - {x: -105, y: -497}
+        - {x: -852, y: -225}
+        - {x: -928, y: 140}
+        - {x: -906, y: 394}
+        - {x: -334, y: 542}
+        - {x: 539, y: 542}
+        - {x: 810, y: 480}
+        - {x: 921, y: 233}
+        - {x: 883, y: -188}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6331b80578f12d54d84e89ef48aaff12
+      internalID: 528448076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seals_1
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1512
+        width: 1608
+        height: 935
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -742, y: -467.5}
+        - {x: -804, y: 91.5}
+        - {x: -675, y: 467.5}
+        - {x: 589, y: 467.5}
+        - {x: 781, y: 426.5}
+        - {x: 804, y: 104.5}
+        - {x: 758, y: -467.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d67ab3d63af27489d3f1ecc87b7f36
+      internalID: -528536963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seals_2
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 52
+        width: 1681
+        height: 976
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -840.5, y: -488}
+        - {x: -840.5, y: 137}
+        - {x: -685.5, y: 418}
+        - {x: -159.5, y: 488}
+        - {x: 371.5, y: 488}
+        - {x: 759.5, y: 424}
+        - {x: 840.5, y: 155}
+        - {x: 840.5, y: -488}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33573b928d44888499b23004c74c65bd
+      internalID: 1650847918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Seals_0: 528448076
+      Seals_1: -528536963
+      Seals_2: 1650847918
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

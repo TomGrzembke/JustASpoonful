@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: a614c6b18187a794289938d916b535b3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_0
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 3035
+        width: 371
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7387e0a58882e6b488614dbdcdfc95f5
+      internalID: 236853375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_6
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 2435
+        width: 450
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4155ccc2c847da3448b7ac739540d0c6
+      internalID: 13567013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_7
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 2435
+        width: 448
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288485f9754a64d4bb09ba296191c141
+      internalID: 1563237436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_8
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1927
+        width: 444
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868e47cbed2ba064c8bb60b7a53319e7
+      internalID: 106960048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_9
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1927
+        width: 442
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dcd3867d4e7b44990990c1ff53ff22
+      internalID: 1876114359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_10
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1421
+        width: 444
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7baf14bd0865e42867c62c2a00406a
+      internalID: 1250050780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_11
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1421
+        width: 442
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17acb302e3ca2f84ea2dfccdd9ef4bce
+      internalID: -1352708504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_12
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 909
+        width: 444
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b80afb9c484a6c4396e94ebca0fc3f7
+      internalID: 214981205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_13
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 913
+        width: 444
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7916250497f7d4f836b39117815539
+      internalID: -1049294030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_14
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 368
+        width: 443
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ac98ecbb830894cb8954144723705c
+      internalID: 1559535621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phone_concept2_gallery_album_spoons copy_16
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 368
+        width: 447
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86094827252ce244ca9d8d0ff69fb48b
+      internalID: 1981664905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      phone_concept2_gallery_album_spoons copy_1: 40979882
+      phone_concept2_gallery_album_spoons copy_2: -1447306512
+      phone_concept2_gallery_album_spoons copy_11: -1352708504
+      phone_concept2_gallery_album_spoons copy_13: -1049294030
+      phone_concept2_gallery_album_spoons copy_16: 1981664905
+      phone_concept2_gallery_album_spoons copy_14: 1559535621
+      phone_concept2_gallery_album_spoons copy_9: 1876114359
+      phone_concept2_gallery_album_spoons copy_7: 1563237436
+      phone_concept2_gallery_album_spoons copy_17: -740351113
+      phone_concept2_gallery_album_spoons copy_15: -545018110
+      phone_concept2_gallery_album_spoons copy_3: -1888468628
+      phone_concept2_gallery_album_spoons copy_5: 1308949740
+      phone_concept2_gallery_album_spoons copy_8: 106960048
+      phone_concept2_gallery_album_spoons copy_0: 236853375
+      phone_concept2_gallery_album_spoons copy_6: 13567013
+      phone_concept2_gallery_album_spoons copy_10: 1250050780
+      phone_concept2_gallery_album_spoons copy_12: 214981205
+      phone_concept2_gallery_album_spoons copy_4: -267120678
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
