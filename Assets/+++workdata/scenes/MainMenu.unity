@@ -243,9 +243,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 40686729}
+  - component: {fileID: 40686730}
   - component: {fileID: 40686732}
   - component: {fileID: 40686731}
-  - component: {fileID: 40686730}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -316,13 +316,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: ToCredits
-        m_Mode: 1
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
+        m_MethodName: EnableMenuObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1269431359}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -815,9 +815,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 203769140}
+  - component: {fileID: 203769141}
   - component: {fileID: 203769143}
   - component: {fileID: 203769142}
-  - component: {fileID: 203769141}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -888,13 +888,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: ToOptions
-        m_Mode: 1
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
+        m_MethodName: EnableMenuObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1747031775}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1897,9 +1897,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 656027534}
+  - component: {fileID: 656027535}
   - component: {fileID: 656027537}
   - component: {fileID: 656027536}
-  - component: {fileID: 656027535}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2980,9 +2980,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081945184}
+  - component: {fileID: 1081945185}
   - component: {fileID: 1081945187}
   - component: {fileID: 1081945186}
-  - component: {fileID: 1081945185}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -4366,9 +4366,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1705451871}
+  - component: {fileID: 1705451872}
   - component: {fileID: 1705451874}
   - component: {fileID: 1705451873}
-  - component: {fileID: 1705451872}
   m_Layer: 5
   m_Name: MusikButton
   m_TagString: Untagged
@@ -4439,13 +4439,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: ToMusic
-        m_Mode: 1
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
+        m_MethodName: EnableMenuObject
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 828854587}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4600,6 +4600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734063841}
+  - component: {fileID: 1734063843}
   - component: {fileID: 1734063842}
   m_Layer: 0
   m_Name: ----Manager
@@ -4617,7 +4618,7 @@ Transform:
   m_GameObject: {fileID: 1734063839}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 610.0454, y: 306.64578, z: -6.5054235}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4719,6 +4720,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1734063843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734063839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7cc871117f2784989d017e88c1faa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuObjects:
+  - {fileID: 1980832506}
+  - {fileID: 1747031775}
+  - {fileID: 1269431359}
+  - {fileID: 828854587}
 --- !u!1 &1746085100
 GameObject:
   m_ObjectHideFlags: 0
