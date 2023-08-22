@@ -6,6 +6,7 @@ namespace JustASpoonful
     {
         #region Cashes
         [SerializeField] GameObject[] menuObjects;
+        [SerializeField] GameObject menuBG;
         #endregion
 
         #region Variables
@@ -20,6 +21,20 @@ namespace JustASpoonful
             for (int i = 0; i < menuObjects.Length; i++)
             {
                 menuObjects[i].SetActive(menuObjects[i] == objectToEnable);
+            }
+        }
+
+        public void Quit()
+        {
+            Application.Quit();
+        }
+
+        public void StartCutscene()
+        {
+            menuBG.SetActive(false);
+            for (int i = 0; i < menuObjects.Length; i++)
+            {
+                menuObjects[i].SetActive(false);
             }
         }
     }
