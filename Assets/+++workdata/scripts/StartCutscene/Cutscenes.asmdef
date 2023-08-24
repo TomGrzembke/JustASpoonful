@@ -1,0 +1,16 @@
+{
+    "name": "Cutscenes",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d57448aa86b6d3e4eaa6eac57db1d885"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

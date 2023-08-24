@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace JustASpoonful
 {
@@ -36,6 +37,16 @@ namespace JustASpoonful
             {
                 menuObjects[i].SetActive(false);
             }
+        }
+
+        public void LoadScene(string scene)
+        {
+            SceneManager.LoadScene(scene);
+        }
+
+        public void LoadScene(int sceneID)
+        {
+            SceneManager.LoadScene(sceneID);
         }
     }
 }
