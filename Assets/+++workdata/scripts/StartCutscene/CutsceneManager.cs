@@ -12,10 +12,11 @@ namespace JustASpoonful
 
         IEnumerator Start()
         {
+            yield return new WaitForSeconds(cutsceneInterval);
             for (int i = 1; i < cutsceneImage.Length; i++)
             {
-                yield return new WaitForSeconds(cutsceneInterval);
                 cutsceneImage[i].SetActive(true);
+                yield return new WaitForSeconds(cutsceneInterval);
             }
             LoadNextScene();
         }
