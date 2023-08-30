@@ -1668,7 +1668,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -130726282, guid: 489228ccb4ff12e4d9814869eff686a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4839,6 +4839,13 @@ MonoBehaviour:
   - {fileID: 906837594}
   - {fileID: 2098937439}
   - {fileID: 1759053308}
+  cutsceneImageDuration:
+  - 3
+  - 0
+  - 0
+  - 2.5
+  - 4.5
+  - 3
   cutsceneInterval: 4
   mainMenuManager: {fileID: 1734063843}
 --- !u!1 &1746085100
