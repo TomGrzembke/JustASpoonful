@@ -6,28 +6,27 @@ namespace JustASpoonful
 {
     public class CutsceneManager : MonoBehaviour
     {
-        [SerializeField] GameObject[] cutsceneImage;
-        [SerializeField] float[] cutsceneImageDuration;
-        [SerializeField] float cutsceneInterval = 2f;
+        [SerializeField] GameObject[] images;
+        [SerializeField] float[] imageDuration;
+        [SerializeField] float defaultInterval = 4;
         [SerializeField] MainMenuManager mainMenuManager;
 
         IEnumerator Start()
         {
-            if (cutsceneImageDuration[0] == 0)
-                yield return new WaitForSeconds(cutsceneInterval);
-            else
-                yield return new WaitForSeconds(cutsceneImageDuration[0]);
+            yield return new WaitForSeconds(CheckIfCustomIntervalIsSet(0));
 
-            for (int i = 1; i < cutsceneImage.Length; i++)
+            for (int i = 1; i < images.Length; i++)
             {
-                cutsceneImage[i].SetActive(true);
+                images[i].SetActive(true);
 
-                if (cutsceneImageDuration[i] == 0)
-                    yield return new WaitForSeconds(cutsceneInterval);
-                else
-                    yield return new WaitForSeconds(cutsceneImageDuration[i]);
+                yield return new WaitForSeconds(CheckIfCustomIntervalIsSet(i));
             }
             LoadNextScene();
+        }
+
+        float CheckIfCustomIntervalIsSet(int index)
+        {
+            return imageDuration[index] != 0 ? imageDuration[index] : defaultInterval;
         }
 
         public void SkipCutscene()

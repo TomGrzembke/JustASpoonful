@@ -4832,21 +4832,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d2fc07f060e7a4883b0fae145da75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneImage:
+  images:
   - {fileID: 1079111111}
   - {fileID: 7419593}
   - {fileID: 1413660702}
   - {fileID: 906837594}
   - {fileID: 2098937439}
   - {fileID: 1759053308}
-  cutsceneImageDuration:
+  imageDuration:
   - 3
-  - 0
-  - 0
+  - 6.5
   - 2.5
-  - 4.5
-  - 3
-  cutsceneInterval: 4
+  - 2.5
+  - 5
+  - 2.5
+  defaultInterval: 4
   mainMenuManager: {fileID: 1734063843}
 --- !u!1 &1746085100
 GameObject:
