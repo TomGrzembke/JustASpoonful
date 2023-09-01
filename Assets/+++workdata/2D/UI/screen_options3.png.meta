@@ -155,10 +155,10 @@ TextureImporter:
       name: screen_options3_2
       rect:
         serializedVersion: 2
-        x: 2543
-        y: 2915
-        width: 166
-        height: 190
+        x: 2579
+        y: 2953
+        width: 102
+        height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
