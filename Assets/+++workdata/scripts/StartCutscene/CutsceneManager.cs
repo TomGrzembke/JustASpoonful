@@ -37,7 +37,7 @@ namespace JustASpoonful
 
         private void LoadNextScene()
         {
-            mainMenuManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, 1);
+            mainMenuManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1,1);
         }
     }
 

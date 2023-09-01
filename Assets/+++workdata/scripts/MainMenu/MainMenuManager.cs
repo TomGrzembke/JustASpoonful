@@ -42,32 +42,40 @@ namespace JustASpoonful
         }
 
         #region Loadscene overload
+        /// <summary> Will wait the delay amount of time and play a transition if you specify one at the second index </summary> 
         public void LoadScene(string scene)
         {
             SceneManager.LoadScene(scene);
         }
 
+
+        /// <summary> Will wait the delay amount of time and play a transition if you specify one at the second index </summary>
         public void LoadScene(int sceneID)
         {
             SceneManager.LoadScene(sceneID);
         }
 
+        /// <summary> Will wait the delay amount of time </summary>
         public void LoadScene(int sceneID, float delay)
         {
             StartCoroutine(LoadSceneWithDelay(sceneID, delay));
         }
 
+        /// <summary> Will wait the delay amount of time </summary>   
         public void LoadScene(string scene, float delay)
         {
             StartCoroutine(LoadSceneWithDelay(scene, delay));
         }
 
+        /// <summary> Will wait the delay amount of time </summary>   
         IEnumerator LoadSceneWithDelay(string scene, float delay)
         {
             transitionAnim.SetTrigger("fadeOut");
             yield return new WaitForSeconds(delay);
             LoadScene(scene);
         }
+
+        /// <summary> Will wait the delay amount of time </summary>   
         IEnumerator LoadSceneWithDelay(int sceneID, float delay)
         {
             transitionAnim.SetTrigger("fadeOut");
