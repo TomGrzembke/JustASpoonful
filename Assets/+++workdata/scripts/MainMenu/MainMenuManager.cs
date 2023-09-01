@@ -37,6 +37,15 @@ namespace JustASpoonful
             screenToggle.isOn = screenToggleState;
         }
 
+        public void StartCutscene()
+        {
+            menuBG.SetActive(false);
+            for (int i = 0; i < menuObjects.Length; i++)
+            {
+                menuObjects[i].SetActive(false);
+            }
+        }
+
         /// <summary>
         /// Enables one given object and disables the rest
         /// </summary>
@@ -53,15 +62,13 @@ namespace JustASpoonful
             Application.Quit();
         }
 
-        public void StartCutscene()
+
+        public void OpenURL(string link)
         {
-            menuBG.SetActive(false);
-            for (int i = 0; i < menuObjects.Length; i++)
-            {
-                menuObjects[i].SetActive(false);
-            }
+            Application.OpenURL(link);
         }
 
+        #region Settings
         public void OnMusicSliderChanged()
         {
             float volume = musicSlider.value;
@@ -92,11 +99,7 @@ namespace JustASpoonful
             Screen.fullScreen = state;
             PlayerPrefs.SetInt("fullscreenState", state ? 0 : 1);
         }
-
-        public void OpenURL(string link)
-        {
-            Application.OpenURL(link);
-        }
+        #endregion
 
         #region Loadscene overload
         /// <summary> Will wait the delay amount of time and play a transition if you specify one at the second index </summary> 
