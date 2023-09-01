@@ -716,9 +716,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 165016402}
+  - component: {fileID: 165016403}
   - component: {fileID: 165016405}
   - component: {fileID: 165016404}
-  - component: {fileID: 165016403}
   m_Layer: 5
   m_Name: CDPlayerMusic
   m_TagString: Untagged
@@ -790,8 +790,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
         m_MethodName: OpenURL
         m_Mode: 5
         m_Arguments:
@@ -2160,9 +2160,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 693569417}
+  - component: {fileID: 693569418}
   - component: {fileID: 693569420}
   - component: {fileID: 693569419}
-  - component: {fileID: 693569418}
   m_Layer: 5
   m_Name: MainTrack
   m_TagString: Untagged
@@ -2234,8 +2234,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
         m_MethodName: OpenURL
         m_Mode: 5
         m_Arguments:
@@ -3129,9 +3129,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1139049148}
+  - component: {fileID: 1139049149}
   - component: {fileID: 1139049151}
   - component: {fileID: 1139049150}
-  - component: {fileID: 1139049149}
   m_Layer: 5
   m_Name: GuitarMusic
   m_TagString: Untagged
@@ -3203,8 +3203,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
         m_MethodName: OpenURL
         m_Mode: 5
         m_Arguments:
@@ -4105,23 +4105,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2188248896344872444, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2188248896344872444, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2466247636227419702, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2466247636227419702, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2466247636227419702, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4706,9 +4706,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1746085101}
+  - component: {fileID: 1746085102}
   - component: {fileID: 1746085104}
   - component: {fileID: 1746085103}
-  - component: {fileID: 1746085102}
   m_Layer: 5
   m_Name: StartScreen
   m_TagString: Untagged
@@ -4780,8 +4780,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 1734063843}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
         m_MethodName: OpenURL
         m_Mode: 5
         m_Arguments:
@@ -4845,7 +4845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1747031776
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5056,7 +5056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1980832507
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5370,23 +5370,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2188248896344872444, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2188248896344872444, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2466247636227419702, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2466247636227419702, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2466247636227419702, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
