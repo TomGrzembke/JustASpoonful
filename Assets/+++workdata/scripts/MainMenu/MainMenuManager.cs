@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,7 @@ namespace JustASpoonful
         #region Cashes
         [SerializeField] GameObject[] menuObjects;
         [SerializeField] GameObject menuBG;
+        [SerializeField] Animator transitionAnim;
         #endregion
 
         #region Variables
@@ -39,6 +41,7 @@ namespace JustASpoonful
             }
         }
 
+        #region Loadscene overload
         public void LoadScene(string scene)
         {
             SceneManager.LoadScene(scene);
@@ -48,5 +51,29 @@ namespace JustASpoonful
         {
             SceneManager.LoadScene(sceneID);
         }
+
+        public void LoadScene(int sceneID, float delay)
+        {
+            StartCoroutine(LoadSceneWithDelay(sceneID, delay));
+        }
+
+        public void LoadScene(string scene, float delay)
+        {
+            StartCoroutine(LoadSceneWithDelay(scene, delay));
+        }
+
+        IEnumerator LoadSceneWithDelay(string scene, float delay)
+        {
+            transitionAnim.SetTrigger("fadeOut");
+            yield return new WaitForSeconds(delay);
+            LoadScene(scene);
+        }
+        IEnumerator LoadSceneWithDelay(int sceneID, float delay)
+        {
+            transitionAnim.SetTrigger("fadeOut");
+            yield return new WaitForSeconds(delay);
+            LoadScene(sceneID);
+        }
+        #endregion
     }
 }
