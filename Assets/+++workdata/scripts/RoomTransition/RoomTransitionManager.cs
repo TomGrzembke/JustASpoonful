@@ -1,5 +1,5 @@
-using UnityEngine;
 using Cinemachine;
+using UnityEngine;
 
 namespace JustASpoonful
 {
@@ -8,29 +8,44 @@ namespace JustASpoonful
     {
         [SerializeField] CinemachineVirtualCamera[] roomCams;
         [SerializeField] GameObject[] inputArrows;
-        int activeRoomCamIndex;
+        public int currentHighestCamPrio { get; private set; }
+        int activeRoomCamID;
 
         public void RoomInput(int nextState)
         {
-            activeRoomCamIndex = GetCurrentCamIndex();
+            activeRoomCamID = GetCurrentCamIndex();
 
-            roomCams[activeRoomCamIndex].Priority--;
-            roomCams[activeRoomCamIndex + nextState].Priority++;
+            roomCams[activeRoomCamID].Priority = 0;
+            roomCams[activeRoomCamID + nextState].Priority++;
 
-            activeRoomCamIndex = GetCurrentCamIndex();
-            inputArrows[0].SetActive(activeRoomCamIndex != 0);
-            inputArrows[1].SetActive(activeRoomCamIndex != roomCams.Length -1);
+            ManageArrowVisibility();
         }
 
         int GetCurrentCamIndex()
         {
+            int currentActiveRoomCamID = 0;
             for (int i = 0; i < roomCams.Length; i++)
             {
-                int currentCamPrio = roomCams[i].Priority;
-                if (currentCamPrio > roomCams[activeRoomCamIndex].Priority)
-                    activeRoomCamIndex = i;
+                currentHighestCamPrio = roomCams[i].Priority;
+                if (currentHighestCamPrio > roomCams[currentActiveRoomCamID].Priority)
+                    currentActiveRoomCamID = i;
             }
-            return activeRoomCamIndex;
+            return currentActiveRoomCamID;
+        }
+        void ManageArrowVisibility()
+        {
+            activeRoomCamID = GetCurrentCamIndex();
+
+            inputArrows[0].SetActive(activeRoomCamID != 0);
+            inputArrows[1].SetActive(activeRoomCamID != roomCams.Length - 1);
+        }
+
+        public void SetActiveArrows(bool state)
+        {
+            for (int i = 0; i < inputArrows.Length; i++)
+            {
+                inputArrows[i].SetActive(state);
+            }
         }
     }
 }
