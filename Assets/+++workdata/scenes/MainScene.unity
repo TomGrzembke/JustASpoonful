@@ -4782,14 +4782,14 @@ MonoBehaviour:
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 2
+    m_Time: 1.2
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: 35c037373b80e6941991f28c11449cc5, type: 2}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7489,7 +7489,7 @@ Transform:
   m_GameObject: {fileID: 337301595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.111448325, w: 0.9937703}
-  m_LocalPosition: {x: 24.65, y: 27.27, z: -11.883364}
+  m_LocalPosition: {x: 24.65, y: 27.27, z: 0}
   m_LocalScale: {x: 0.1361433, y: 0.1361433, z: 0.13614325}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8960,7 +8960,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 0.5
+    OrthographicSize: 0.45
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -16076,7 +16076,7 @@ Transform:
   m_GameObject: {fileID: 739197171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.89, y: 10, z: -11.88336}
+  m_LocalPosition: {x: 16.89, y: 10, z: 0}
   m_LocalScale: {x: 4.426369, y: 1.1945, z: 1.1945}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16124,7 +16124,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 26
   m_Sprite: {fileID: 21300000, guid: 989bd0e2af74eeb46a7d06ede621c87e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.27058825}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16874,6 +16874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774051455}
+  - component: {fileID: 774051456}
   m_Layer: 0
   m_Name: ----Cameras
   m_TagString: Untagged
@@ -16898,11 +16899,30 @@ Transform:
   - {fileID: 2092301111}
   - {fileID: 1574450097}
   - {fileID: 471308639}
+  - {fileID: 1802324264}
   - {fileID: 1996235461}
   - {fileID: 399131537}
-  - {fileID: 1802324264}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774051456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774051454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280e5f69be435594b93893f13cc16371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomCams:
+  - {fileID: 1574450098}
+  - {fileID: 471308640}
+  - {fileID: 1802324265}
+  inputArrows:
+  - {fileID: 800525908}
+  - {fileID: 1155135253}
 --- !u!1 &780513555
 GameObject:
   m_ObjectHideFlags: 0
@@ -17099,9 +17119,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 800525909}
+  - component: {fileID: 800525912}
   - component: {fileID: 800525911}
   - component: {fileID: 800525910}
-  - component: {fileID: 800525912}
   m_Layer: 5
   m_Name: arrow left
   m_TagString: Untagged
@@ -17125,7 +17145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.37441698}
   m_AnchorMax: {x: 0.071, y: 0.625583}
-  m_AnchoredPosition: {x: -2.999878, y: 32}
+  m_AnchoredPosition: {x: -2.999817, y: 32}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800525910
@@ -17210,14 +17230,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-        m_MethodName: ChangeCamPos
-        m_Mode: 5
+      - m_Target: {fileID: 774051456}
+        m_TargetAssemblyTypeName: JustASpoonful.RoomTransitionManager, MainScene.RoomTransition
+        m_MethodName: RoomInput
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: left
           m_BoolArgument: 0
@@ -23758,9 +23778,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155135254}
+  - component: {fileID: 1155135257}
   - component: {fileID: 1155135256}
   - component: {fileID: 1155135255}
-  - component: {fileID: 1155135257}
   m_Layer: 5
   m_Name: arrow right
   m_TagString: Untagged
@@ -23869,14 +23889,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-        m_MethodName: ChangeCamPos
-        m_Mode: 5
+      - m_Target: {fileID: 774051456}
+        m_TargetAssemblyTypeName: JustASpoonful.RoomTransitionManager, MainScene.RoomTransition
+        m_MethodName: RoomInput
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: right
           m_BoolArgument: 0
@@ -38233,7 +38253,7 @@ Transform:
   m_GameObject: {fileID: 1996235460}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 12.83, z: -9.418073}
+  m_LocalPosition: {x: 0.13, y: 12.83, z: -9.418073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
