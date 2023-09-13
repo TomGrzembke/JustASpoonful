@@ -62,7 +62,6 @@ namespace JustASpoonful
             Application.Quit();
         }
 
-
         public void OpenURL(string link)
         {
             Application.OpenURL(link);
