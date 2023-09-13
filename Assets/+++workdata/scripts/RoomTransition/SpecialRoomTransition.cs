@@ -22,7 +22,7 @@ namespace JustASpoonful
 
         IEnumerator ToRoom()
         {
-            roomTransiManager?.SetActiveArrows(false);
+            roomTransiManager.SetActiveArrows(false);
             transiCam.Priority = roomTransiManager.currentHighestCamPrio + 1;
 
             yield return null;
@@ -33,7 +33,7 @@ namespace JustASpoonful
         }
         IEnumerator FromRoom()
         {
-            roomTransiManager?.SetActiveArrows(true);
+            roomTransiManager.SetActiveArrows(true);
             roomCam.Priority = 0;
             transiCam.Priority = roomTransiManager.currentHighestCamPrio + 1;
 

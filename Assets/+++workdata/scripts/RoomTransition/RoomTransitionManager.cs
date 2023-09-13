@@ -21,6 +21,7 @@ namespace JustASpoonful
             ManageArrowVisibility();
         }
 
+        /// <summary> Gets the index of the cam from the room cam array, which carries the highest prio </summary>
         int GetCurrentCamIndex()
         {
             int currentActiveRoomCamID = 0;
