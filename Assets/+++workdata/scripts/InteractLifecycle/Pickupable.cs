@@ -4,25 +4,33 @@ namespace JustASpoonful
 {
     public class Pickupable : MonoBehaviour, IPickupable
     {
-        [SerializeField] GameObject uIObject;
-        [SerializeField] bool solved;
+        [SerializeField] Interactable interactable;
 
         public void Pickup()
         {
             gameObject.SetActive(false);
-
-            if (uIObject != null)
-                uIObject.SetActive(true);
-            else
-                Debug.LogWarning(gameObject.name + " has no assigned UIObject");
+            if (CheckAssigned(interactable))
+                interactable.GetUIObject().SetActive(true);
         }
 
         public void Drop()
         {
-            if (solved)
+            if (interactable.solved)
                 gameObject.SetActive(true);
 
-            uIObject.SetActive(false);
+            if (CheckAssigned(interactable))
+                interactable.GetUIObject().SetActive(false);
+        }
+
+        public bool CheckAssigned(MonoBehaviour script)
+        {
+            if (script != null)
+                return true;
+            else
+            {
+                Debug.LogWarning("At " + gameObject.name + script.ToString() +" has no assigned Interactable");
+                return false;
+            }
         }
     }
 }

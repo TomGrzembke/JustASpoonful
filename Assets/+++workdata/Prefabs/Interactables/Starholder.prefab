@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6096319153974330703}
   - component: {fileID: 6096319153974330700}
   m_Layer: 0
-  m_Name: StarsPuzzle
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
