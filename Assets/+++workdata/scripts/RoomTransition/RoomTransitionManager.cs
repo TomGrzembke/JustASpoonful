@@ -48,5 +48,15 @@ namespace JustASpoonful
                 inputArrows[i].SetActive(state);
             }
         }
+
+        void OnEnable()
+        {
+            SetActiveArrows(true);
+        }
+
+        void OnDisable()
+        {
+            SetActiveArrows(false);
+        }
     }
 }
