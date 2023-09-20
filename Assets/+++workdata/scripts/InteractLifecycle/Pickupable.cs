@@ -28,7 +28,7 @@ namespace JustASpoonful
                 return true;
             else
             {
-                Debug.LogWarning("At " + gameObject.name + script.ToString() +" has no assigned Interactable");
+                Debug.LogWarning("At " + gameObject.name +" has no assigned Interactable");
                 return false;
             }
         }
