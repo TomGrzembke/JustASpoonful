@@ -5,13 +5,13 @@ namespace JustASpoonful
 {
     public class DrawerSpace : MonoBehaviour
     {
+        [SerializeField] DrawerSpaceManager drawerSpaceManager;
         [SerializeField] ObjID objIDNeeded;
         [SerializeField] List<Movable> objOnSpace;
         [SerializeField] bool solved;
 
         void OnTriggerEnter2D(Collider2D col)
         {
-            print("a");
             objOnSpace.Add(col.GetComponent<Movable>());
             CheckSolved();
         }
@@ -26,7 +26,7 @@ namespace JustASpoonful
         {
             for (int i = 0; i < objOnSpace.Count; i++)
             {
-                if(objIDNeeded == objOnSpace[i].GetObjID())
+                if (objIDNeeded == objOnSpace[i].GetObjID())
                     solved = true;
                 else
                 {
@@ -34,6 +34,13 @@ namespace JustASpoonful
                     break;
                 }
             }
+
+            drawerSpaceManager.CheckSolved();
+        }
+
+        public bool GetSolved()
+        {
+            return solved;
         }
     }
 }

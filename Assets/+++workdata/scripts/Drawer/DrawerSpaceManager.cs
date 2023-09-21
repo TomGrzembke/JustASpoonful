@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class DrawerSpaceManager : MonoBehaviour
+namespace JustASpoonful
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DrawerSpaceManager : MonoBehaviour
     {
-        
-    }
+        [SerializeField] DrawerSpace[] drawerSpace;
+        [SerializeField] bool solved;
+        [SerializeField] UnityEvent OnSolved;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void CheckSolved()
+        {
+            for (int i = 0; i < drawerSpace.Length; i++)
+            {
+               if( drawerSpace[i].GetSolved())
+                    solved = true;
+                else
+                {
+                    solved = false;
+                    break;
+                }
+
+            }
+
+            if( solved)
+            {
+                OnSolved.Invoke();
+            }
+        }
     }
 }

@@ -17,12 +17,15 @@ namespace JustASpoonful
         Vector2 cursorPos;
         Camera mainCam;
         Vector3 newObjPos;
+        Collider2D thisCollider2D;
         #endregion
 
         [SerializeField] ObjID objID;
+        public bool isBeingDragged { get; private set; }
  
         void Awake()
         {
+            thisCollider2D = GetComponent<Collider2D>();
             mainCam = Camera.main;
             gameControl = new();
             gameControl.GameController.Look.performed += ctx => SetCursorPos(ctx.ReadValue<Vector2>());
@@ -35,6 +38,7 @@ namespace JustASpoonful
 
         public void MoveAlongCursor()
         {
+            SetIsBeingDragged(true);
             newObjPos = mainCam.ScreenToWorldPoint(cursorPos);
             newObjPos = new(newObjPos.x, newObjPos.y, 0);
             transform.position = newObjPos;
@@ -43,6 +47,12 @@ namespace JustASpoonful
         public ObjID GetObjID()
         {
             return objID;
+        }
+
+        public void SetIsBeingDragged(bool condition)
+        {
+            isBeingDragged = condition;
+            thisCollider2D.enabled = !condition;
         }
 
         #region OnEnable/Disable
