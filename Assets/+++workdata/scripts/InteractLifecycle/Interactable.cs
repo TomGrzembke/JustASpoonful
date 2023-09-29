@@ -6,6 +6,7 @@ namespace JustASpoonful
     public class Interactable : MonoBehaviour
     {
         [SerializeField] bool disableColOnInteract = true;
+        [Tooltip("Will invoke onSolved if null and clicked")]
         [SerializeField] GameObject uIObject;
         [SerializeField] GameObject starObj;
         [SerializeField] UnityEvent onSolved;
