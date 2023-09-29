@@ -5,10 +5,21 @@ namespace JustASpoonful
 {
     public class Interactable : MonoBehaviour
     {
+        [SerializeField] bool disableColOnInteract = true;
         [SerializeField] GameObject uIObject;
         [SerializeField] GameObject starObj;
         [SerializeField] UnityEvent onSolved;
+        [SerializeField] UnityEvent onAnimPlayed;
         public bool solved { get; private set; }
+
+        #region Cashed vars
+        Collider2D col;
+        #endregion
+
+        void Awake()
+        {
+            col = GetComponent<Collider2D>();
+        }
 
         public void OnInteract()
         {
@@ -16,8 +27,7 @@ namespace JustASpoonful
             {
                 OnSolved();
             }
-
-            if (uIObject.activeInHierarchy)
+            else if (uIObject.activeInHierarchy)
             {
                 uIObject.SetActive(false);
                 OnSolved();
@@ -28,7 +38,9 @@ namespace JustASpoonful
         {
             solved = true;
             starObj.SetActive(false);
-            onSolved.Invoke();
+            onSolved?.Invoke();
+            if (disableColOnInteract)
+                col.enabled = false;
         }
 
         public GameObject GetUIObject()
@@ -44,7 +56,7 @@ namespace JustASpoonful
                 return true;
             else
             {
-                Debug.LogWarning("At " + gameObject.name + " has no assigned Interactable");
+                print(gameObject.name + " has no assigned Interactable");
                 return false;
             }
         }
@@ -57,8 +69,22 @@ namespace JustASpoonful
                 return;
             }
 
-            if (uIObject.activeInHierarchy)
+            if (GetUIObject() == null)
+            {
                 starObj.SetActive(true);
+            }
+            else if (uIObject.activeInHierarchy)
+                starObj.SetActive(true);
+        }
+
+        public void AnimFinished()
+        {
+            onAnimPlayed?.Invoke();
+        }
+
+        public void SetUIObj(GameObject newUIObj)
+        {
+            uIObject = newUIObj;
         }
     }
 }

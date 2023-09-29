@@ -43,10 +43,14 @@ namespace JustASpoonful
 
         public void SetActiveArrows(bool state)
         {
-            for (int i = 0; i < inputArrows.Length; i++)
+            try
             {
-                inputArrows[i].SetActive(state);
+                for (int i = 0; i < inputArrows.Length; i++)
+                {
+                    inputArrows[i].SetActive(state);
+                }
             }
+            catch { }
         }
 
         void OnEnable()
