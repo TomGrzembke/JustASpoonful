@@ -8,7 +8,6 @@ namespace JustASpoonful
         [SerializeField] Transform returnPoint;
         [SerializeField] float returnSpeed = 25;
         GameObject returnObj;
-
         void OnTriggerEnter2D(Collider2D col)
         {
             if (col.CompareTag("Movable"))

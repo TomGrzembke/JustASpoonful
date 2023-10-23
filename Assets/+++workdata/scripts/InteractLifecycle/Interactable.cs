@@ -16,7 +16,7 @@ namespace JustASpoonful
         #region Cashed vars
         Collider2D col;
         #endregion
-
+        
         void Awake()
         {
             col = GetComponent<Collider2D>();
