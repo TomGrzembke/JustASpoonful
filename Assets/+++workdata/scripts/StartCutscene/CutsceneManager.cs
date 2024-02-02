@@ -9,7 +9,6 @@ namespace JustASpoonful
         [SerializeField] GameObject[] images;
         [SerializeField] float[] imageDuration;
         [SerializeField] float defaultInterval = 4;
-        [SerializeField] MainMenuManager mainMenuManager;
 
         IEnumerator Start()
         {
@@ -26,6 +25,8 @@ namespace JustASpoonful
 
         float CheckIfCustomIntervalIsSet(int index)
         {
+            if (imageDuration.Length < 1)
+                return defaultInterval;
             return imageDuration[index] != 0 ? imageDuration[index] : defaultInterval;
         }
 
@@ -37,8 +38,7 @@ namespace JustASpoonful
 
         void LoadNextScene()
         {
-
-            mainMenuManager.LoadScene(gameObject.scene.buildIndex + 1, 1);
+            SceneManager.LoadScene(gameObject.scene.buildIndex + 1);
         }
     }
 
