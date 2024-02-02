@@ -35,6 +35,11 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        instance = this;
+    }
+
     public Coroutine LoadSceneViaIndex(Scenes scene, Action onLoadingFinished = null)
     {
         return LoadSceneViaIndex((int)scene, onLoadingFinished);

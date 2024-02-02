@@ -31,7 +31,6 @@ namespace JustASpoonful
             SetMusicVolume(PlayerPrefs.GetFloat("musicVolume"));
             SetSfxVolume(PlayerPrefs.GetFloat("sfxVolume"));
 
-            //Gets and sets the State of the screentoggle
             bool screenToggleState = PlayerPrefs.GetInt("fullscreenState") == 0;
             Screen.fullScreen = screenToggleState;
             screenToggle.isOn = screenToggleState;
