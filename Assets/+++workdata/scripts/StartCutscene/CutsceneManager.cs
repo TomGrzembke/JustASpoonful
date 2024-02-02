@@ -35,9 +35,10 @@ namespace JustASpoonful
             LoadNextScene();
         }
 
-        private void LoadNextScene()
+        void LoadNextScene()
         {
-            mainMenuManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, 1);
+
+            mainMenuManager.LoadScene(gameObject.scene.buildIndex + 1, 1);
         }
     }
 
