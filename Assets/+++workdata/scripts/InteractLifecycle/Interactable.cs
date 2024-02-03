@@ -16,7 +16,7 @@ namespace JustASpoonful
         #region Cashed vars
         Collider2D col;
         #endregion
-        
+
         void Awake()
         {
             col = GetComponent<Collider2D>();
@@ -24,10 +24,9 @@ namespace JustASpoonful
 
         public void OnInteract()
         {
-            if (uIObject == null)
-            {
+            if (!uIObject)
                 OnSolved();
-            }
+
             else if (uIObject.activeInHierarchy)
             {
                 uIObject.SetActive(false);
@@ -40,6 +39,7 @@ namespace JustASpoonful
             solved = true;
             starObj.SetActive(false);
             onSolved?.Invoke();
+
             if (disableColOnInteract)
                 col.enabled = false;
         }
@@ -57,7 +57,7 @@ namespace JustASpoonful
                 return true;
             else
             {
-                print(gameObject.name + " has no assigned Interactable");
+                Debug.Log("Has no assigned Interactable", gameObject);
                 return false;
             }
         }
