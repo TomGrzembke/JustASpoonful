@@ -1301,6 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
+  neededForWin: 1
   uIObject: {fileID: 1193082646}
   starObj: {fileID: 1064688843}
   onSolved:
@@ -3271,6 +3272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 307936719}
   onSolved:
@@ -6682,6 +6684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 1748620482}
   starObj: {fileID: 1300308775}
   onSolved:
@@ -17443,6 +17446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 1534971376}
   onSolved:
@@ -20094,6 +20098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 1060193628}
   onSolved:
@@ -20720,6 +20725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 1196770258}
   starObj: {fileID: 1212265932}
   onSolved:
@@ -23334,6 +23340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 1175550879}
   starObj: {fileID: 666512886}
   onSolved:
@@ -23858,6 +23865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 201655301}
   starObj: {fileID: 1898866624}
   onSolved:
@@ -24836,6 +24844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 9077446947712025965}
   onSolved:
@@ -33595,6 +33604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 0
   uIObject: {fileID: 0}
   starObj: {fileID: 639195195}
   onSolved:
@@ -34621,6 +34631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 647888208}
   starObj: {fileID: 1094725037}
   onSolved:
@@ -35722,6 +35733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 2082914344}
   onSolved:
@@ -36690,138 +36702,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1681177586
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1681177587}
-  - component: {fileID: 1681177590}
-  - component: {fileID: 1681177589}
-  - component: {fileID: 1681177588}
-  m_Layer: 5
-  m_Name: EndButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1681177587
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681177586}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.37053642, y: 0.37053642, z: 0.37053642}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1797230849}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.33562496, y: 0}
-  m_AnchorMax: {x: 0.61535424, y: 0.39200002}
-  m_AnchoredPosition: {x: -2, y: 71.5}
-  m_SizeDelta: {x: 905, y: 338}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1681177588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681177586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1681177589}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-        m_MethodName: Endgame1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1681177589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681177586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1ddd84cbe4f2214fb7257ce60206ece, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1681177590
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681177586}
-  m_CullTransparentMesh: 1
 --- !u!1 &1688732246
 GameObject:
   m_ObjectHideFlags: 0
@@ -39017,7 +38897,6 @@ RectTransform:
   - {fileID: 135326245}
   - {fileID: 580414837}
   - {fileID: 1270743101}
-  - {fileID: 1681177587}
   - {fileID: 542577726}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43116,6 +42995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 1607750007}
   onSolved:
@@ -43828,6 +43708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
+  neededForWin: 1
   uIObject: {fileID: 0}
   starObj: {fileID: 94322979}
   onSolved:

@@ -42,7 +42,7 @@ public class SceneLoader : MonoBehaviour
 
     public Coroutine LoadSceneViaIndex(Scenes scene, Action onLoadingFinished = null)
     {
-        return LoadSceneViaIndex((int)scene, onLoadingFinished);
+        return LoadSceneViaIndex(scene.GetIndex(), onLoadingFinished);
     }
 
 

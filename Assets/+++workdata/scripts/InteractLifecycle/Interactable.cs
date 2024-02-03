@@ -6,6 +6,7 @@ namespace JustASpoonful
     public class Interactable : MonoBehaviour
     {
         [SerializeField] bool disableColOnInteract = true;
+        [SerializeField] bool neededForWin = true;
         [Tooltip("Will invoke onSolved if null and clicked")]
         [SerializeField] GameObject uIObject;
         [SerializeField] GameObject starObj;
@@ -20,6 +21,8 @@ namespace JustASpoonful
         void Awake()
         {
             col = GetComponent<Collider2D>();
+            if (neededForWin)
+                GameStateManager.Instance.SubscribeInteractable(this);
         }
 
         public void OnInteract()
@@ -39,6 +42,7 @@ namespace JustASpoonful
             solved = true;
             starObj.SetActive(false);
             onSolved?.Invoke();
+            GameStateManager.Instance.DesubscribeInteractable(this);
 
             if (disableColOnInteract)
                 col.enabled = false;
