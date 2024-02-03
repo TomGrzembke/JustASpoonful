@@ -1,3 +1,16 @@
 {
-	"name": "DrawerHelp"
+    "name": "DrawerHelp",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d2c700c2ae0c0e742b277e5426475a90"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
