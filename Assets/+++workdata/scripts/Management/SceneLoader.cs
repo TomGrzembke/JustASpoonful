@@ -53,14 +53,17 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneViaIndexCo(int index, Action onLoadingFinished)
     {
+        LoadingScreen.Instance.Show(this);
         var scene = SceneManager.GetSceneByBuildIndex(index);
         if (scene.isLoaded)
         {
             onLoadingFinished?.Invoke();
+            LoadingScreen.Instance.Hide(this);
             yield break;
         }
 
         yield return SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
+        LoadingScreen.Instance.Hide(this);
         onLoadingFinished?.Invoke();
     }
     public Coroutine UnloadSceneViaIndex(int index, Action onLoadingFinished = null)
