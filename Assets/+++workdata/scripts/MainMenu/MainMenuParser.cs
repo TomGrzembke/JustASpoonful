@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace JustASpoonful
 {
-    public class MainMenuManager : MonoBehaviour
+    public class MainMenuParser : MonoBehaviour
     {
         #region Cashes
         [Header("Menu")]
