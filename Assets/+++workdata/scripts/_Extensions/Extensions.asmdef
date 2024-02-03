@@ -1,8 +1,8 @@
 {
-    "name": "MainMenu",
+    "name": "Extensions",
     "rootNamespace": "",
     "references": [
-        "GUID:d2c700c2ae0c0e742b277e5426475a90"
+        "GUID:48c9f6afdac61634db0e0f241c7d4d51"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

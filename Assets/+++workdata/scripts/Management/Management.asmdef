@@ -1,8 +1,8 @@
 {
-    "name": "MainMenu",
+    "name": "Management",
     "rootNamespace": "",
     "references": [
-        "GUID:d2c700c2ae0c0e742b277e5426475a90"
+        "GUID:8bccc0cde935f354e83fa5664b426302"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

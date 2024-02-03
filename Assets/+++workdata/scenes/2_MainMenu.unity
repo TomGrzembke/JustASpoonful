@@ -545,19 +545,7 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1734063843}
-        m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
-        m_MethodName: FullScreenToggle
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_IsOn: 1
 --- !u!1 &165016401
 GameObject:
@@ -3363,6 +3351,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1734063843}
@@ -3773,7 +3765,6 @@ MonoBehaviour:
   transitionAnim: {fileID: 408691165}
   musicSlider: {fileID: 1714104163}
   sfxSlider: {fileID: 1673444197}
-  audioMixer: {fileID: 24100000, guid: 2469c87f4fe04cc4f86451d82bb6ed94, type: 2}
   screenToggle: {fileID: 115777701}
 --- !u!1 &1746085100
 GameObject:
@@ -4215,9 +4206,25 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1734063843}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869553404523544698, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6093336454104391783, guid: b9bda088d00e5d140a765e186f26f78f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
