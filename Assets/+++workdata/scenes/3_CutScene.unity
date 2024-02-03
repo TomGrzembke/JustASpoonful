@@ -1308,9 +1308,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CutSceneController, Assembly-CSharp
-        m_MethodName: NextPicture
+      - m_Target: {fileID: 830475387}
+        m_TargetAssemblyTypeName: JustASpoonful.CutsceneManager, Cutscenes
+        m_MethodName: SkipCutscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

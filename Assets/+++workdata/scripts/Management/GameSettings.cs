@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -76,12 +75,6 @@ public class GameSettings : MonoBehaviour
         sfxEmitSound = true;
     }
 
-    void InitializeScreenToggle()
-    {
-        screenToggle.isOn = ScreenToggle;
-        Screen.fullScreen = ScreenToggle;
-    }
-
     public void OnScreenToggleChanged(bool condition)
     {
         ScreenToggle = condition;
@@ -105,7 +98,6 @@ public class GameSettings : MonoBehaviour
         musicSlider = _musicSlider;
         musicSlider.onValueChanged.AddListener(OnMusicSliderChanged);
         musicSlider.value = MusicVolume;
-        OnMusicSliderChanged();
     }
 
     public void SubscribeSFXSlider(Slider _sfxSlider)
@@ -113,13 +105,11 @@ public class GameSettings : MonoBehaviour
         sfxSlider = _sfxSlider;
         sfxSlider.value = SFXVolume;
         sfxSlider.onValueChanged.AddListener(OnSfxSliderChanged);
-        OnSfxSliderChanged();
     }
     public void SubscribeFullscreenToggle(Toggle _fullscreenToggle)
     {
         screenToggle = _fullscreenToggle;
         screenToggle.isOn = ScreenToggle;
         screenToggle.onValueChanged.AddListener(OnScreenToggleChanged);
-        InitializeScreenToggle();
     }
 }

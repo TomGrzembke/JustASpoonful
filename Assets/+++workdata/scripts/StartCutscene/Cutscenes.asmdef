@@ -2,7 +2,8 @@
     "name": "Cutscenes",
     "rootNamespace": "",
     "references": [
-        "GUID:d57448aa86b6d3e4eaa6eac57db1d885"
+        "GUID:d57448aa86b6d3e4eaa6eac57db1d885",
+        "GUID:d2c700c2ae0c0e742b277e5426475a90"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

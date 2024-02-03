@@ -38,7 +38,8 @@ namespace JustASpoonful
 
         void LoadNextScene()
         {
-            SceneManager.LoadScene(gameObject.scene.buildIndex + 1);
+            SceneLoader.Instance.LoadSceneViaIndex(gameObject.scene.buildIndex + 1);
+            SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
         }
     }
 

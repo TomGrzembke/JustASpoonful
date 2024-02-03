@@ -22,7 +22,7 @@ namespace JustASpoonful
 
         [SerializeField] ObjID objID;
         public bool isBeingDragged { get; private set; }
- 
+
         void Awake()
         {
             thisCollider2D = GetComponent<Collider2D>();
@@ -39,6 +39,8 @@ namespace JustASpoonful
         public void MoveAlongCursor()
         {
             SetIsBeingDragged(true);
+            if (!mainCam)
+                mainCam = Camera.main;
             newObjPos = mainCam.ScreenToWorldPoint(cursorPos);
             newObjPos = new(newObjPos.x, newObjPos.y, 0);
             transform.position = newObjPos;

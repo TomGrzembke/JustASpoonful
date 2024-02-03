@@ -1179,11 +1179,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 77521363093615582, guid: 3f7c2cbb319b4d34f841e937b7d31373, type: 3}
   m_PrefabInstance: {fileID: 1586356555547615071}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &408691165 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 88689496043131379, guid: 3f7c2cbb319b4d34f841e937b7d31373, type: 3}
-  m_PrefabInstance: {fileID: 1586356555547615071}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &420243533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,8 +1745,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1734063843}
         m_TargetAssemblyTypeName: JustASpoonful.MainMenuManager, MainMenu
-        m_MethodName: LoadScene
-        m_Mode: 3
+        m_MethodName: NextScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3761,8 +3756,6 @@ MonoBehaviour:
   - {fileID: 1747031775}
   - {fileID: 1269431359}
   - {fileID: 828854587}
-  menuBG: {fileID: 855746740}
-  transitionAnim: {fileID: 408691165}
   musicSlider: {fileID: 1714104163}
   sfxSlider: {fileID: 1673444197}
   screenToggle: {fileID: 115777701}

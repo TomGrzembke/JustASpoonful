@@ -43,6 +43,12 @@ namespace JustASpoonful
             Application.Quit();
         }
 
+        public void NextScene()
+        {
+            SceneLoader.Instance.LoadSceneViaIndex(gameObject.scene.buildIndex + 1);
+            SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
+        }
+
         public void OpenURL(string link)
         {
             Application.OpenURL(link);
