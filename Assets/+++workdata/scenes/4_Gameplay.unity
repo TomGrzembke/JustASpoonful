@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
-  neededForWin: 1
+  neededForWin: 0
   uIObject: {fileID: 1193082646}
   starObj: {fileID: 1064688843}
   onSolved:
@@ -3272,7 +3272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
-  neededForWin: 1
+  neededForWin: 0
   uIObject: {fileID: 0}
   starObj: {fileID: 307936719}
   onSolved:
@@ -17446,7 +17446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableColOnInteract: 0
-  neededForWin: 1
+  neededForWin: 0
   uIObject: {fileID: 0}
   starObj: {fileID: 1534971376}
   onSolved:
