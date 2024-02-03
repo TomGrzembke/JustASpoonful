@@ -3547,6 +3547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171643400}
   - component: {fileID: 171643401}
+  - component: {fileID: 171643404}
   - component: {fileID: 171643403}
   - component: {fileID: 171643402}
   m_Layer: 0
@@ -3569,7 +3570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8451524383436325130}
+  - {fileID: 188998407}
   m_Father: {fileID: 1832340743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &171643401
@@ -3789,9 +3790,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-          m_MethodName: PuzzlePickup
+        - m_Target: {fileID: 171643404}
+          m_TargetAssemblyTypeName: JustASpoonful.Pickupable, InteractLifecycle
+          m_MethodName: Pickup
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3805,34 +3806,138 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-          m_MethodName: StarHover
-          m_Mode: 2
+        - m_Target: {fileID: 188998408}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
           m_Arguments:
-            m_ObjectArgument: {fileID: 8451524383436325129}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-          m_MethodName: StarHoverEnd
-          m_Mode: 2
+        - m_Target: {fileID: 188998408}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
           m_Arguments:
-            m_ObjectArgument: {fileID: 8451524383436325129}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &171643404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171643399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 2021227976}
+--- !u!1001 &188998406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 171643400}
+    m_Modifications:
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247272674968031324, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_Name
+      value: Starholder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096319153974330701, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096319153974330702, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.1663113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096319153974330702, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1663113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096319153974330702, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.1663113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096319153974330702, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096319153974330702, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.85
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+--- !u!4 &188998407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+  m_PrefabInstance: {fileID: 188998406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &188998408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6096319153974330701, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
+  m_PrefabInstance: {fileID: 188998406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &193578393
 GameObject:
   m_ObjectHideFlags: 0
@@ -10335,7 +10440,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.33, y: 0}
+  m_Offset: {x: 0.32999992, y: -0.38420638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: -0.00046883352}
@@ -10346,7 +10451,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.12, y: 1.81}
+  m_Size: {x: 8.12, y: 2.5784123}
   m_EdgeRadius: 0
 --- !u!1 &420710375
 GameObject:
@@ -14986,8 +15091,11 @@ MonoBehaviour:
   drawerOpen: {fileID: 156280241, guid: 9271e1063f011a34f8ea16dbbc26dfbe, type: 3}
   drawerClosed: {fileID: -231309278, guid: 9271e1063f011a34f8ea16dbbc26dfbe, type: 3}
   drawerSprite: {fileID: 622222866}
+  drawerCollider: {fileID: 622222873}
   drawerTrans: {fileID: 622222865}
   drawerHitbox: {fileID: 400191429}
+  dragWidth: 3
+  moveTime: 1
 --- !u!60 &622222872
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15043,8 +15151,8 @@ PolygonCollider2D:
       - {x: 3.4202456, y: -1.5608855}
       - {x: 3.4345102, y: -0.980313}
       - {x: 0.70834917, y: 1.6750181}
-      - {x: 0.6886182, y: 1.1637582}
-      - {x: -1.3822691, y: 1.1787579}
+      - {x: 0.69841444, y: 0.9595725}
+      - {x: -1.4214553, y: 0.8951667}
       - {x: -1.3818026, y: 1.710677}
       - {x: 0.7018765, y: 1.7059364}
       - {x: 3.4186652, y: -0.95945513}
@@ -15099,18 +15207,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.34914425, y: 1.4319744}
+  m_Offset: {x: -0.34914422, y: 1.3185381}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.00046883352}
-    oldSize: {x: 7.16, y: 8.1}
-    newSize: {x: 7.16, y: 8.1}
+    pivot: {x: 0.4689745, y: 0.5332354}
+    oldSize: {x: 6.605, y: 4.8055143}
+    newSize: {x: 6.01, y: 4.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0907674, y: 0.5303631}
+  m_Size: {x: 2.0907674, y: 0.7572358}
   m_EdgeRadius: 0
 --- !u!1 &629192612
 GameObject:
@@ -42979,9 +43087,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-          m_MethodName: PuzzleComplete
+        - m_Target: {fileID: 2021227976}
+          m_TargetAssemblyTypeName: JustASpoonful.Interactable, InteractLifecycle
+          m_MethodName: OnInteract
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -42995,29 +43103,29 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-          m_MethodName: StarHoverPuzzle
-          m_Mode: 2
+        - m_Target: {fileID: 2021227976}
+          m_TargetAssemblyTypeName: JustASpoonful.Interactable, InteractLifecycle
+          m_MethodName: OnHover
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: EventTriggerBehavior, Assembly-CSharp
-          m_MethodName: StarHoverEnd
-          m_Mode: 2
+        - m_Target: {fileID: 2021227976}
+          m_TargetAssemblyTypeName: JustASpoonful.Interactable, InteractLifecycle
+          m_MethodName: OnHover
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -43058,14 +43166,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disableColOnInteract: 1
   neededForWin: 1
-  uIObject: {fileID: 0}
+  uIObject: {fileID: 697424471}
   starObj: {fileID: 1607750007}
   onSolved:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2021227975}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: isComplete
+          m_BoolArgument: 0
+        m_CallState: 2
   onAnimPlayed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633059964}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2031492359
 GameObject:
   m_ObjectHideFlags: 0
@@ -45453,112 +45585,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &8451524383436325128
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8451524383436325129}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 55ebba11ebd620a46917e4ae84103cfa, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!1 &8451524383436325129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8451524383436325130}
-  - component: {fileID: 8451524383436325131}
-  - component: {fileID: 8451524383436325128}
-  m_Layer: 0
-  m_Name: StarsPuzzlePiece
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &8451524383436325130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8451524383436325129}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.4981614, y: -0, z: -0, w: 0.8670843}
-  m_LocalPosition: {x: 1, y: -467.8, z: 276.3}
-  m_LocalScale: {x: 2.7842224, y: 2.3695502, z: 2.3695507}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 171643400}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8451524383436325131
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8451524383436325129}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: -1006063360, guid: 56ccb1d5cad3dc04296f44a351e1667d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!95 &9077446947712025964
 Animator:
   serializedVersion: 5
