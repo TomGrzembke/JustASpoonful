@@ -27,13 +27,14 @@ namespace JustASpoonful
 
         void CheckSolved()
         {
-            if (objIDNeeded == ObjID.Nothing && objOnSpace.Count == 0)
-            {
-                solved = true;
-                return;
-            }
-            else if (objIDNeeded == ObjID.Nothing)
-                return;
+            if (objIDNeeded == ObjID.Nothing)
+                if (objOnSpace.Count != 0)
+                    return;
+                else
+                {
+                    solved = true;
+                    return;
+                }
 
             for (int i = 0; i < objOnSpace.Count; i++)
             {
