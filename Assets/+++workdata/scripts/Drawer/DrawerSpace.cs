@@ -12,18 +12,29 @@ namespace JustASpoonful
 
         void OnTriggerEnter2D(Collider2D col)
         {
-            objOnSpace.Add(col.GetComponent<Movable>());
-            CheckSolved();
+            if (col.TryGetComponent(out Movable movable))
+            {
+                objOnSpace.Add(movable);
+                CheckSolved();
+            }
         }
 
         void OnTriggerExit2D(Collider2D col)
         {
-            objOnSpace.Remove(col.GetComponent<Movable>());
-            CheckSolved();
+            if (objOnSpace.Remove(col.GetComponent<Movable>()))
+                CheckSolved();
         }
 
         void CheckSolved()
         {
+            if (objIDNeeded == ObjID.Nothing && objOnSpace.Count == 0)
+            {
+                solved = true;
+                return;
+            }
+            else if (objIDNeeded == ObjID.Nothing)
+                return;
+
             for (int i = 0; i < objOnSpace.Count; i++)
             {
                 if (objIDNeeded == objOnSpace[i].GetObjID())
@@ -35,7 +46,9 @@ namespace JustASpoonful
                 }
             }
 
-            drawerSpaceManager.CheckSolved();
+            if (drawerSpaceManager)
+                drawerSpaceManager.CheckSolved();
+
         }
 
         public bool GetSolved()
