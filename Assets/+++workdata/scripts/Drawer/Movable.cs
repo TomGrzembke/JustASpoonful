@@ -4,6 +4,7 @@ namespace JustASpoonful
 {
     public enum ObjID
     {
+        Nothing,
         Blocker,
         Seal,
         Garbage,
@@ -18,6 +19,8 @@ namespace JustASpoonful
         Camera mainCam;
         Vector3 newObjPos;
         Collider2D thisCollider2D;
+        SpriteRenderer sr;
+        int originalOrderInLayer;
         #endregion
 
         [SerializeField] ObjID objID;
@@ -25,6 +28,8 @@ namespace JustASpoonful
 
         void Awake()
         {
+            sr = GetComponent<SpriteRenderer>();
+            originalOrderInLayer = sr.sortingOrder;
             thisCollider2D = GetComponent<Collider2D>();
             mainCam = Camera.main;
             gameControl = new();
@@ -53,6 +58,7 @@ namespace JustASpoonful
 
         public void SetIsBeingDragged(bool condition)
         {
+            sr.sortingOrder = condition ? originalOrderInLayer + 100 : originalOrderInLayer;
             isBeingDragged = condition;
             thisCollider2D.enabled = !condition;
         }
