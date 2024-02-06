@@ -209,7 +209,7 @@ TextureImporter:
       phone_concept2_messages _2: 175397538
       phone_concept2_messages _3: 1261266868
   mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

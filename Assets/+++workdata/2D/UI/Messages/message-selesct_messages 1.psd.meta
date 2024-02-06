@@ -256,7 +256,7 @@ TextureImporter:
       message-selesct_messages_3: 1927392107
       message-selesct_messages_4: -1842244781
   mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

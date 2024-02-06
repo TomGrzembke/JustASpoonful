@@ -209,7 +209,7 @@ TextureImporter:
       contacts_2: 748292911
       contacts_3: 1359599982
   mipmapLimitGroupName: 
-  pSDRemoveMatte: 0
+  pSDRemoveMatte: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
