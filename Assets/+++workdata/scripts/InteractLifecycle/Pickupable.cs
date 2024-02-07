@@ -6,7 +6,6 @@ namespace JustASpoonful
     public class Pickupable : MonoBehaviour, IPickupable
     {
         [SerializeField] Interactable interactable;
-        [SerializeField] bool disableColliderOnSolved = true;
         [SerializeField] List<GameObject> alternUI;
         /// <summary> Used when multiple objects are usable for the object </summary>
 
@@ -39,7 +38,7 @@ namespace JustASpoonful
         {
             gameObject.SetActive(true);
 
-            if (interactable.solved && disableColliderOnSolved)
+            if (interactable.solved)
                 GetComponent<Collider2D>().enabled = false;
 
             if (CheckAssigned(interactable))

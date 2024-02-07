@@ -617,8 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 1529673148}
-  disableColliderOnSolved: 0
+  interactable: {fileID: 1592936115}
   alternUI: []
 --- !u!1 &33171387
 GameObject:
@@ -4220,7 +4219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 78796526}
-  disableColliderOnSolved: 1
   alternUI: []
 --- !u!60 &163548749
 PolygonCollider2D:
@@ -4663,7 +4661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 2021227976}
-  disableColliderOnSolved: 1
   alternUI: []
 --- !u!1001 &188998406
 PrefabInstance:
@@ -5359,8 +5356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 1529673148}
-  disableColliderOnSolved: 0
+  interactable: {fileID: 1592936115}
   alternUI: []
 --- !u!1 &197363790
 GameObject:
@@ -15628,7 +15624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 894250615}
-  disableColliderOnSolved: 1
   alternUI: []
 --- !u!1 &481657783
 GameObject:
@@ -16564,7 +16559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 1071780025}
-  disableColliderOnSolved: 1
   alternUI: []
 --- !u!1 &515307941
 GameObject:
@@ -16972,8 +16966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 1529673148}
-  disableColliderOnSolved: 0
+  interactable: {fileID: 1592936115}
   alternUI: []
 --- !u!1 &542577725
 GameObject:
@@ -35440,8 +35433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 1529673148}
-  disableColliderOnSolved: 0
+  interactable: {fileID: 1592936115}
   alternUI: []
 --- !u!1 &1256442465
 GameObject:
@@ -35656,8 +35648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 1529673148}
-  disableColliderOnSolved: 0
+  interactable: {fileID: 1592936115}
   alternUI: []
 --- !u!1 &1270743100
 GameObject:
@@ -41078,8 +41069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658dbab4ce9027046a5f43b68f7b4667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactable: {fileID: 1529673148}
-  disableColliderOnSolved: 0
+  interactable: {fileID: 1592936115}
   alternUI: []
 --- !u!1 &1529673142
 GameObject:
@@ -46795,7 +46785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 1071319295}
-  disableColliderOnSolved: 1
   alternUI: []
 --- !u!1 &1764865316
 GameObject:
@@ -47049,7 +47038,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 297585402}
-  disableColliderOnSolved: 1
   alternUI: []
 --- !u!1 &1784342649
 GameObject:
