@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace JustASpoonful
@@ -5,6 +6,8 @@ namespace JustASpoonful
     public class Pickupable : MonoBehaviour, IPickupable
     {
         [SerializeField] Interactable interactable;
+        [SerializeField] bool disableColliderOnSolved = true;
+        [SerializeField] List<GameObject> alternUI;
         /// <summary> Used when multiple objects are usable for the object </summary>
 
 
@@ -20,6 +23,7 @@ namespace JustASpoonful
 
         public void Pickup(GameObject alternUIObj)
         {
+            alternUI.Add(alternUIObj);
             gameObject.SetActive(false);
 
             if (CheckAssigned(alternUIObj))
@@ -35,12 +39,18 @@ namespace JustASpoonful
         {
             gameObject.SetActive(true);
 
-            if(interactable.solved)
+            if (interactable.solved && disableColliderOnSolved)
                 GetComponent<Collider2D>().enabled = false;
 
             if (CheckAssigned(interactable))
                 if (CheckAssigned(interactable.GetUIObject()))
                     interactable.GetUIObject().SetActive(false);
+
+            if (alternUI.Count > 0)
+                for (int i = 0; i < alternUI.Count; i++)
+                {
+                    alternUI[i].SetActive(false);
+                }
         }
 
         public bool CheckAssigned(MonoBehaviour script)
