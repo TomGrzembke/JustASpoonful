@@ -7,6 +7,7 @@ namespace JustASpoonful
     {
         [SerializeField] Interactable interactable;
         [SerializeField] List<GameObject> alternUI;
+        [SerializeField] bool reenableVisualAfterSolved;
         /// <summary> Used when multiple objects are usable for the object </summary>
 
 
@@ -37,6 +38,8 @@ namespace JustASpoonful
         public void Drop()
         {
             gameObject.SetActive(true);
+            if(!reenableVisualAfterSolved && interactable.solved)
+                gameObject.SetActive(false);
 
             if (interactable.solved)
                 GetComponent<Collider2D>().enabled = false;
