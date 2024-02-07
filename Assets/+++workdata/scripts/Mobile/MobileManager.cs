@@ -1,16 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Device;
 
 namespace JustASpoonful
 {
     public class MobileManager : MonoBehaviour
     {
-        [SerializeField] List<GameObject> screenHistory;
         [SerializeField] GameObject mobile;
         [SerializeField] GameObject homeScreen;
 
+        [Header("Runtime")]
         [SerializeField] GameObject currentScreen;
+        [SerializeField] List<GameObject> screenHistory;
+
 
         void Start()
         {
@@ -37,13 +38,6 @@ namespace JustASpoonful
             currentScreen.SetActive(true);
         }
 
-         void DeactivateHistoryExcept(GameObject screen)
-        {
-            for (int i = 0; i < screenHistory.Count; i++)
-            {
-                screenHistory[i].SetActive(screenHistory[i] == screen);
-            }
-        }
 
         public void BackScreen()
         {
@@ -66,6 +60,14 @@ namespace JustASpoonful
             currentScreen = homeScreen;
             DeactivateHistoryExcept(homeScreen);
             homeScreen.SetActive(true);
+        }
+
+        void DeactivateHistoryExcept(GameObject screen)
+        {
+            for (int i = 0; i < screenHistory.Count; i++)
+            {
+                screenHistory[i].SetActive(screenHistory[i] == screen);
+            }
         }
     }
 }

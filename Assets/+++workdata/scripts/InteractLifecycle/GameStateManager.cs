@@ -9,6 +9,7 @@ namespace JustASpoonful
         [SerializeField] List<Interactable> interactableInstigator = new();
         [SerializeField] List<Interactable> interactableDoneInstigator = new();
         [SerializeField] GameObject endButton;
+        [SerializeField] Pickupable currentDropable;
 
         void Awake()
         {
@@ -29,6 +30,12 @@ namespace JustASpoonful
             {
                 endButton.SetActive(true);
             }
+        }
+
+        public void AddPickupable(Pickupable pickupable)
+        {
+            currentDropable?.Drop();
+            currentDropable = pickupable;
         }
     }
 }

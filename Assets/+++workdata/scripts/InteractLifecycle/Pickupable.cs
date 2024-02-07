@@ -14,6 +14,8 @@ namespace JustASpoonful
 
             if (CheckAssigned(interactable))
                 interactable.GetUIObject().SetActive(true);
+
+            GameStateManager.Instance.AddPickupable(this);
         }
 
         public void Pickup(GameObject alternUIObj)
@@ -25,15 +27,20 @@ namespace JustASpoonful
 
             else if (CheckAssigned(interactable))
                 interactable.GetUIObject().SetActive(true);
+
+            GameStateManager.Instance.AddPickupable(this);
         }
 
         public void Drop()
         {
-            if (interactable.solved)
-                gameObject.SetActive(true);
+            gameObject.SetActive(true);
+
+            if(interactable.solved)
+                GetComponent<Collider2D>().enabled = false;
 
             if (CheckAssigned(interactable))
-                interactable.GetUIObject().SetActive(false);
+                if (CheckAssigned(interactable.GetUIObject()))
+                    interactable.GetUIObject().SetActive(false);
         }
 
         public bool CheckAssigned(MonoBehaviour script)
