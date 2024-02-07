@@ -53,7 +53,8 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadSceneViaIndexCo(int index, Action onLoadingFinished)
     {
-        LoadingScreen.Instance.Show(this);
+        if (LoadingScreen.Instance)
+            LoadingScreen.Instance.Show(this);
         var scene = SceneManager.GetSceneByBuildIndex(index);
         if (scene.isLoaded)
         {
