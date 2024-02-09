@@ -10631,7 +10631,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.476923, y: 2.4384756}
+    oldSize: {x: 2.476923, y: 2.4384615}
     newSize: {x: 2.476923, y: 2.4388008}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20249,7 +20249,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.476923, y: 2.4384756}
+    oldSize: {x: 2.476923, y: 2.4384615}
     newSize: {x: 2.476923, y: 2.4388008}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -36697,7 +36697,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.792308, y: 3.8384836}
+    oldSize: {x: 4.792308, y: 3.8384616}
     newSize: {x: 6.9307694, y: 2.1387591}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -44248,6 +44248,7 @@ GameObject:
   - component: {fileID: 1697345300}
   - component: {fileID: 1697345302}
   - component: {fileID: 1697345301}
+  - component: {fileID: 1697345303}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -44312,6 +44313,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697345299}
   m_CullTransparentMesh: 1
+--- !u!114 &1697345303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697345299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1697345301}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 393852414}
+        m_TargetAssemblyTypeName: JustASpoonful.MobileManager, Mobile
+        m_MethodName: ToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1700382953
 GameObject:
   m_ObjectHideFlags: 0
@@ -49172,7 +49229,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.85831094, y: 0.13588418}
-    oldSize: {x: 9.638462, y: 12.238531}
+    oldSize: {x: 9.638461, y: 12.2384615}
     newSize: {x: 6.9307694, y: 2.1387591}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -51730,23 +51787,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.548
+      value: 1.0335854
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.548
+      value: 1.0335854
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.548
+      value: 1.0335854
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.13
+      value: 3.47
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.3
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -51754,7 +51811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.997143
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalRotation.x
@@ -51766,7 +51823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.075537495
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -51778,7 +51835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 8.664
       objectReference: {fileID: 0}
     - target: {fileID: 8082737521051727479, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_IsTrigger
@@ -53498,6 +53555,7 @@ GameObject:
   - component: {fileID: 1965434143}
   - component: {fileID: 1965434145}
   - component: {fileID: 1965434144}
+  - component: {fileID: 1965434146}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -53562,6 +53620,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965434142}
   m_CullTransparentMesh: 1
+--- !u!114 &1965434146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965434142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1965434144}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 393852414}
+        m_TargetAssemblyTypeName: JustASpoonful.MobileManager, Mobile
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1974028165
 GameObject:
   m_ObjectHideFlags: 0

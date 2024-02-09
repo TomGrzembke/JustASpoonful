@@ -69,5 +69,16 @@ namespace JustASpoonful
                 screenHistory[i].SetActive(screenHistory[i] == screen);
             }
         }
+
+        public void ToMain()
+        {
+            SceneLoader.Instance.LoadSceneViaIndex(Scenes.MainMenu);
+            SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
+        }
+
+        public void Quit()
+        {
+            Application.Quit();
+        }
     }
 }
