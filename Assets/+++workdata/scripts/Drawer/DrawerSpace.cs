@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace JustASpoonful
 {
@@ -9,6 +10,8 @@ namespace JustASpoonful
         [SerializeField] ObjID objIDNeeded;
         [SerializeField] List<Movable> objOnSpace;
         [SerializeField] bool solved;
+        [SerializeField] UnityEvent onUnsolved;
+        [SerializeField] UnityEvent onSolved;
 
         void OnTriggerEnter2D(Collider2D col)
         {
@@ -33,23 +36,34 @@ namespace JustASpoonful
                 else
                 {
                     solved = true;
+                    onSolved?.Invoke();
                     return;
                 }
 
             for (int i = 0; i < objOnSpace.Count; i++)
             {
                 if (objIDNeeded == objOnSpace[i].GetObjID())
+                {
                     solved = true;
+                    onSolved?.Invoke();
+                }
                 else
                 {
                     solved = false;
+                    onUnsolved?.Invoke();
                     break;
                 }
             }
 
+            if (solved && objIDNeeded != ObjID.Nothing)
+                if (objOnSpace.Count < 1)
+                {
+                    solved = false;
+                    onUnsolved?.Invoke();
+                }
+
             if (drawerSpaceManager)
                 drawerSpaceManager.CheckSolved();
-
         }
 
         public bool GetSolved()

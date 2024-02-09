@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace JustASpoonful
 {
@@ -9,6 +8,7 @@ namespace JustASpoonful
         [SerializeField] GameObject[] images;
         [SerializeField] float[] imageDuration;
         [SerializeField] float defaultInterval = 4;
+        [SerializeField] bool switchScene = true;
 
         IEnumerator Start()
         {
@@ -38,7 +38,14 @@ namespace JustASpoonful
 
         void LoadNextScene()
         {
+            if (!switchScene) return;
             SceneLoader.Instance.LoadSceneViaIndex(gameObject.scene.buildIndex + 1);
+            SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
+        }
+
+        public void ToMain()
+        {
+            SceneLoader.Instance.LoadSceneViaIndex(Scenes.MainMenu);
             SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
         }
     }

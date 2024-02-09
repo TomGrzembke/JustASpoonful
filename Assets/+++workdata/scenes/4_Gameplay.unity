@@ -10536,7 +10536,7 @@ Transform:
   m_GameObject: {fileID: 308302239}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 19.27, z: 0}
+  m_LocalPosition: {x: -0.23, y: 20.34, z: 0}
   m_LocalScale: {x: 0.7743, y: 0.7743, z: 0.7743}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10744,7 +10744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544f229ba57fbc24791ac82bbde78792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objID: 2
+  objID: 3
 --- !u!50 &308302245
 Rigidbody2D:
   serializedVersion: 4
@@ -14862,9 +14862,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawerSpaceManager: {fileID: 1173349637}
-  objIDNeeded: 1
+  objIDNeeded: 2
   objOnSpace: []
   solved: 0
+  onUnsolved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1165982108}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 526275493, guid: cefd226fed639e545955700c21408686, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSolved:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1165982108}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 521034766, guid: cefd226fed639e545955700c21408686, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &430378573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33152,7 +33182,7 @@ GameObject:
   - component: {fileID: 1165982109}
   - component: {fileID: 1165982112}
   m_Layer: 0
-  m_Name: Seals (2)_2
+  m_Name: Seal
   m_TagString: Movable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33487,7 +33517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544f229ba57fbc24791ac82bbde78792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objID: 1
+  objID: 2
 --- !u!50 &1165982112
 Rigidbody2D:
   serializedVersion: 4
@@ -40400,13 +40430,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483273469}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.9, y: 19.89, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.062552646, w: 0.9980417}
+  m_LocalPosition: {x: -14.04, y: 18.24, z: 0}
   m_LocalScale: {x: 0.2396447, y: 0.2396447, z: 0.2396447}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2085847749}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.173}
 --- !u!212 &1483273471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40713,7 +40743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544f229ba57fbc24791ac82bbde78792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objID: 3
+  objID: 4
 --- !u!50 &1483273475
 Rigidbody2D:
   serializedVersion: 4
@@ -49273,6 +49303,12 @@ MonoBehaviour:
   objIDNeeded: 0
   objOnSpace: []
   solved: 0
+  onUnsolved:
+    m_PersistentCalls:
+      m_Calls: []
+  onSolved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1836338222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49333,9 +49369,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawerSpaceManager: {fileID: 1173349637}
-  objIDNeeded: 2
+  objIDNeeded: 3
   objOnSpace: []
   solved: 0
+  onUnsolved:
+    m_PersistentCalls:
+      m_Calls: []
+  onSolved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1842031480
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55789,9 +55831,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawerSpaceManager: {fileID: 1173349637}
-  objIDNeeded: 3
+  objIDNeeded: 4
   objOnSpace: []
   solved: 0
+  onUnsolved:
+    m_PersistentCalls:
+      m_Calls: []
+  onSolved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2088528880
 BoxCollider2D:
   m_ObjectHideFlags: 0
