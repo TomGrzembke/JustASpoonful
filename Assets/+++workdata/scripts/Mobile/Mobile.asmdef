@@ -2,7 +2,9 @@
     "name": "Mobile",
     "rootNamespace": "",
     "references": [
-        "GUID:d2c700c2ae0c0e742b277e5426475a90"
+        "GUID:d2c700c2ae0c0e742b277e5426475a90",
+        "GUID:35b13e1325494b04593600f1c3315369",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

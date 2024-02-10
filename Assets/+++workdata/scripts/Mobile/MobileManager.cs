@@ -7,15 +7,47 @@ namespace JustASpoonful
     {
         [SerializeField] GameObject mobile;
         [SerializeField] GameObject homeScreen;
+        [SerializeField] GameObject settingsScreen;
 
         [Header("Runtime")]
         [SerializeField] GameObject currentScreen;
         [SerializeField] List<GameObject> screenHistory;
 
+        GameControl input;
+
+        void Awake()
+        {
+            input = new();
+
+            input.GameController.Menu.performed += ctx => ToggleSettings();
+        }
 
         void Start()
         {
             currentScreen = homeScreen;
+        }
+
+        void ToggleSettings()
+        {
+            if (!settingsScreen.activeInHierarchy)
+            {
+                MobileSetActive(true);
+                if (currentScreen)
+                {
+                    AddHistory(currentScreen);
+                    currentScreen.SetActive(false);
+
+                    currentScreen = settingsScreen;
+                }
+            }
+            else
+            {
+                MobileSetActive(false);
+                return;
+            }
+
+
+            settingsScreen.SetActive(!settingsScreen.activeInHierarchy);
         }
 
         public void MobileSetActive(bool condition)
@@ -30,7 +62,7 @@ namespace JustASpoonful
 
         public void SwitchScreen(GameObject screen)
         {
-            screenHistory.Add(currentScreen);
+            AddHistory(currentScreen);
             currentScreen = screen;
 
             DeactivateHistoryExcept(screen);
@@ -41,6 +73,11 @@ namespace JustASpoonful
 
         public void BackScreen()
         {
+            if (screenHistory.Count < 1) return;
+
+            if (screenHistory[screenHistory.Count - 1] == currentScreen)
+                screenHistory.RemoveAt(screenHistory.Count - 1);
+
             if (screenHistory.Count < 1) return;
 
             currentScreen.SetActive(false);
@@ -55,11 +92,21 @@ namespace JustASpoonful
         public void HomeScreen()
         {
             currentScreen.SetActive(false);
-            screenHistory.Add(currentScreen);
+            AddHistory(currentScreen);
 
             currentScreen = homeScreen;
             DeactivateHistoryExcept(homeScreen);
             homeScreen.SetActive(true);
+        }
+
+        public void AddHistory(GameObject historyObject)
+        {
+            if (historyObject == null) return;
+
+            if (screenHistory.Count > 0)
+                if (screenHistory[screenHistory.Count - 1] == historyObject) return;
+
+            screenHistory.Add(historyObject);
         }
 
         void DeactivateHistoryExcept(GameObject screen)
@@ -79,6 +126,15 @@ namespace JustASpoonful
         public void Quit()
         {
             Application.Quit();
+        }
+
+        void OnEnable()
+        {
+            input.Enable();
+        }
+        void OnDisable()
+        {
+            input.Disable();
         }
     }
 }
