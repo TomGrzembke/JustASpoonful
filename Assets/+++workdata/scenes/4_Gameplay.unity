@@ -13351,6 +13351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mobile: {fileID: 1163323824}
   homeScreen: {fileID: 1952151642}
+  settingsScreen: {fileID: 1872359337}
   currentScreen: {fileID: 0}
   screenHistory: []
 --- !u!1 &397007321
