@@ -118,7 +118,7 @@ TextureImporter:
         width: 1357
         height: 168
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
         width: 1344
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
         width: 1740
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +181,7 @@ TextureImporter:
         width: 2205
         height: 142
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,6 +189,90 @@ TextureImporter:
       bones: []
       spriteID: bfc39da3868c23845b7d4ff0926c149c
       internalID: -16253969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music_Credits_Schrift_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 557
+        width: 1344
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e49637872510514fa44eeca9aa01aff
+      internalID: 1434661384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music_Credits_Schrift_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 410
+        width: 1224
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9704b469ffe36bb4d80a0dec88c9f1c9
+      internalID: 1767338139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music_Credits_Schrift_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 241
+        width: 1721
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524076823988357489c960ddd6393937
+      internalID: 1337780935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Music_Credits_Schrift_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 82
+        width: 2150
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd81749ac53c3ca4daf4d669bc514932
+      internalID: -700617847
       vertices: []
       indices: 
       edges: []
@@ -208,6 +292,10 @@ TextureImporter:
       Credits_Schrift copy_1: 1784368320
       Credits_Schrift copy_2: 1469019344
       Credits_Schrift copy_3: -16253969
+      Music_Credits_Schrift_0: 1434661384
+      Music_Credits_Schrift_1: 1767338139
+      Music_Credits_Schrift_2: 1337780935
+      Music_Credits_Schrift_3: -700617847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
