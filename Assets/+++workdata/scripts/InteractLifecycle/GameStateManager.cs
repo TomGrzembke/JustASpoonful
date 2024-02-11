@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,8 @@ namespace JustASpoonful
     {
         public static GameStateManager Instance;
 
-        public float InteractInstigatorAmount => interactableInstigator.Count;
+        public event Action<int> OnInteractablesChanged;
+        public int InteractInstigatorAmount => interactableInstigator.Count;
         [SerializeField] List<Interactable> interactableInstigator = new();
         [SerializeField] List<Interactable> interactableDoneInstigator = new();
         [SerializeField] GameObject endButton;
@@ -25,7 +27,9 @@ namespace JustASpoonful
 
         public void DesubscribeInteractable(Interactable interactable)
         {
-            interactableInstigator.Remove(interactable);
+            if (interactableInstigator.Remove(interactable))
+                OnInteractablesChanged?.Invoke(InteractInstigatorAmount);
+
             interactableDoneInstigator.Add(interactable);
 
             if (interactableInstigator.Count < 1)
@@ -38,6 +42,13 @@ namespace JustASpoonful
         {
             currentDropable?.Drop();
             currentDropable = pickupable;
+        }
+
+        public void RegisterOnInteractableChanged(Action<int> callback, bool getInstantCallback = false)
+        {
+            OnInteractablesChanged += callback;
+            if (getInstantCallback)
+                callback(InteractInstigatorAmount);
         }
     }
 }

@@ -10,7 +10,6 @@ public class PostProcessController : MonoBehaviour
     [SerializeField] MinMaxFloat saturationRange;
     ColorGrading colorGrading;
     [SerializeField] float neededRewardAmount;
-    [SerializeField] float rewardAmount;
 
     void Awake()
     {
@@ -34,12 +33,21 @@ public class PostProcessController : MonoBehaviour
         saturationRange.Min = colorGrading.saturation;
     }
 
-    [ButtonMethod]
-    public void Reward()
+    public void Reward(int amount)
     {
-        rewardAmount++;
-        float step = rewardAmount / neededRewardAmount;
+        float step = -(-1 + amount / neededRewardAmount);
+        print(step);
         colorGrading.temperature.value = Mathf.Lerp(temperatureRange.Min, temperatureRange.Max, step);
         colorGrading.saturation.value = Mathf.Lerp(saturationRange.Min, saturationRange.Max, step);
+    }
+
+    void OnEnable()
+    {
+        GameStateManager.Instance.RegisterOnInteractableChanged(Reward);
+    }
+
+    void OnDisable()
+    {
+        GameStateManager.Instance.OnInteractablesChanged -= Reward;
     }
 }
