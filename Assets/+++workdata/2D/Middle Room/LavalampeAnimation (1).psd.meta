@@ -3,7 +3,7 @@ guid: 201507471e6baeb43a18e7fd0086c317
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -660,35 +679,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LavalampeAnimation (1)_1: -845949387
-      LavalampeAnimation (1)_8: 127201574
-      LavalampeAnimation (1)_4: -552731789
-      LavalampeAnimation (1)_7: -394265858
-      LavalampeAnimation (1)_3: -81502495
-      LavalampeAnimation (1)_11: -46667670
-      LavalampeAnimation (1)_13: 1804145369
-      LavalampeAnimation (1)_22: 1616309969
-      LavalampeAnimation (1)_6: 777599466
-      LavalampeAnimation (1)_16: -840979471
-      LavalampeAnimation (1)_19: -196891865
-      LavalampeAnimation (1)_25: -534293156
-      LavalampeAnimation (1)_12: -869221041
-      LavalampeAnimation (1)_14: -1760534510
-      LavalampeAnimation (1)_21: -206065562
-      LavalampeAnimation (1)_9: -925836083
       LavalampeAnimation (1)_0: 310766105
-      LavalampeAnimation (1)_24: 1232303610
-      LavalampeAnimation (1)_20: 616725450
+      LavalampeAnimation (1)_1: -845949387
       LavalampeAnimation (1)_10: 1201614321
-      LavalampeAnimation (1)_23: -1991650181
-      LavalampeAnimation (1)_2: 1846511670
+      LavalampeAnimation (1)_11: -46667670
+      LavalampeAnimation (1)_12: -869221041
+      LavalampeAnimation (1)_13: 1804145369
+      LavalampeAnimation (1)_14: -1760534510
       LavalampeAnimation (1)_15: 1921040101
+      LavalampeAnimation (1)_16: -840979471
       LavalampeAnimation (1)_17: -1206137137
       LavalampeAnimation (1)_18: -823874819
+      LavalampeAnimation (1)_19: -196891865
+      LavalampeAnimation (1)_2: 1846511670
+      LavalampeAnimation (1)_20: 616725450
+      LavalampeAnimation (1)_21: -206065562
+      LavalampeAnimation (1)_22: 1616309969
+      LavalampeAnimation (1)_23: -1991650181
+      LavalampeAnimation (1)_24: 1232303610
+      LavalampeAnimation (1)_25: -534293156
+      LavalampeAnimation (1)_3: -81502495
+      LavalampeAnimation (1)_4: -552731789
       LavalampeAnimation (1)_5: -1433117481
-  spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+      LavalampeAnimation (1)_6: 777599466
+      LavalampeAnimation (1)_7: -394265858
+      LavalampeAnimation (1)_8: 127201574
+      LavalampeAnimation (1)_9: -925836083
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

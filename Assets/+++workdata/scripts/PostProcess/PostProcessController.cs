@@ -36,7 +36,6 @@ public class PostProcessController : MonoBehaviour
     public void Reward(int amount)
     {
         float step = -(-1 + amount / neededRewardAmount);
-        print(step);
         colorGrading.temperature.value = Mathf.Lerp(temperatureRange.Min, temperatureRange.Max, step);
         colorGrading.saturation.value = Mathf.Lerp(saturationRange.Min, saturationRange.Max, step);
     }
