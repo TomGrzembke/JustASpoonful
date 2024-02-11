@@ -6,6 +6,8 @@ namespace JustASpoonful
     public class GameStateManager : MonoBehaviour
     {
         public static GameStateManager Instance;
+
+        public float InteractInstigatorAmount => interactableInstigator.Count;
         [SerializeField] List<Interactable> interactableInstigator = new();
         [SerializeField] List<Interactable> interactableDoneInstigator = new();
         [SerializeField] GameObject endButton;

@@ -1,0 +1,19 @@
+{
+    "name": "PostProcess",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a35efad8797223d499f8c68b1f545dbc",
+        "GUID:d60799ab2a985554ea1a39cd38695018",
+        "GUID:48c9f6afdac61634db0e0f241c7d4d51",
+        "GUID:5c26eb34ad101b948b1e3939e3b6c90c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
