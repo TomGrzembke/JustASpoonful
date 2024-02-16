@@ -7786,6 +7786,7 @@ GameObject:
   - component: {fileID: 262158068}
   - component: {fileID: 262158069}
   - component: {fileID: 262158070}
+  - component: {fileID: 262158071}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7977,6 +7978,50 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &262158071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262158064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &268425747
 GameObject:
   m_ObjectHideFlags: 0
@@ -20884,7 +20929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &718461793
 Transform:
   m_ObjectHideFlags: 0
@@ -20937,7 +20982,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6538463, y: 5.5538464}
+    oldSize: {x: 2.4230769, y: 2.353846}
     newSize: {x: 2.476923, y: 2.4384615}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -21083,7 +21128,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 2045549957, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
+  m_Sprite: {fileID: 345834965, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
   m_Color: {r: 0.990566, g: 0.60028905, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -35072,7 +35117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 915836448, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
+  m_Sprite: {fileID: 2069378866, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -58556,6 +58601,10 @@ PrefabInstance:
     - target: {fileID: 4768824977400108662, guid: d948dc9af1a4a3a4fad95764d158a2fc, type: 3}
       propertyPath: m_Name
       value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768824977400108662, guid: d948dc9af1a4a3a4fad95764d158a2fc, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8949538878616141374, guid: d948dc9af1a4a3a4fad95764d158a2fc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
