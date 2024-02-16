@@ -69,12 +69,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -126,12 +126,12 @@ TextureImporter:
       name: drawAssets_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 7679
-        width: 1355
-        height: 474
+        x: 84
+        y: 3585
+        width: 1470
+        height: 511
       alignment: 9
-      pivot: {x: 0.4580711, y: 0.39243287}
+      pivot: {x: 0.4210831, y: 0.3561687}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: drawAssets_2
       rect:
         serializedVersion: 2
-        x: 1513
-        y: 7729
-        width: 901
-        height: 278
-      alignment: 9
-      pivot: {x: 0.69078463, y: 0.58908147}
+        x: 2869
+        y: 3678
+        width: 315
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,34 +165,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: drawAssets_3
-      rect:
-        serializedVersion: 2
-        x: 2851
-        y: 7132
-        width: 764
-        height: 927
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc5399d8f69dea7488a258901ea0b681
-      internalID: -2047474071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: drawAssets_4
       rect:
         serializedVersion: 2
-        x: 4051
-        y: 7368
-        width: 257
-        height: 487
+        x: 96
+        y: 2364
+        width: 528
+        height: 741
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +189,10 @@ TextureImporter:
       name: drawAssets_5
       rect:
         serializedVersion: 2
-        x: 4604
-        y: 7311
-        width: 273
-        height: 469
+        x: 729
+        y: 2548
+        width: 755
+        height: 920
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +210,10 @@ TextureImporter:
       name: drawAssets_6
       rect:
         serializedVersion: 2
-        x: 5327
-        y: 7472
-        width: 548
-        height: 282
+        x: 1656
+        y: 3103
+        width: 248
+        height: 478
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +231,10 @@ TextureImporter:
       name: drawAssets_7
       rect:
         serializedVersion: 2
-        x: 6037
-        y: 7472
-        width: 304
-        height: 304
+        x: 2020
+        y: 3074
+        width: 266
+        height: 462
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,14 +252,19 @@ TextureImporter:
       name: drawAssets_8
       rect:
         serializedVersion: 2
-        x: 6633
-        y: 7455
-        width: 322
-        height: 317
+        x: 2486
+        y: 2736
+        width: 475
+        height: 722
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -237.5, y: -361}
+        - {x: -237.5, y: 361}
+        - {x: 237.5, y: 361}
+        - {x: 237.5, y: 70}
+        - {x: 201.5, y: -322}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -294,10 +278,10 @@ TextureImporter:
       name: drawAssets_9
       rect:
         serializedVersion: 2
-        x: 7268
-        y: 7176
-        width: 483
-        height: 727
+        x: 1526
+        y: 2736
+        width: 542
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +299,10 @@ TextureImporter:
       name: drawAssets_10
       rect:
         serializedVersion: 2
-        x: 7118
-        y: 6276
-        width: 666
-        height: 699
+        x: 2596
+        y: 2312
+        width: 616
+        height: 492
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +320,10 @@ TextureImporter:
       name: drawAssets_11
       rect:
         serializedVersion: 2
-        x: 185
-        y: 6645
-        width: 535
-        height: 744
+        x: 2049
+        y: 2538
+        width: 119
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +341,10 @@ TextureImporter:
       name: drawAssets_12
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 6910
-        width: 296
-        height: 309
+        x: 2057
+        y: 2382
+        width: 115
+        height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +362,10 @@ TextureImporter:
       name: drawAssets_13
       rect:
         serializedVersion: 2
-        x: 2453
-        y: 5944
-        width: 279
-        height: 165
+        x: 104
+        y: 2031
+        width: 184
+        height: 277
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +383,10 @@ TextureImporter:
       name: drawAssets_14
       rect:
         serializedVersion: 2
-        x: 6625
-        y: 5500
-        width: 138
-        height: 300
+        x: 322
+        y: 2106
+        width: 268
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +404,10 @@ TextureImporter:
       name: drawAssets_15
       rect:
         serializedVersion: 2
-        x: 3203
-        y: 4965
-        width: 186
-        height: 308
+        x: 640
+        y: 2032
+        width: 176
+        height: 297
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +425,10 @@ TextureImporter:
       name: drawAssets_16
       rect:
         serializedVersion: 2
-        x: 4856
-        y: 5217
-        width: 235
-        height: 235
+        x: 879
+        y: 2040
+        width: 224
+        height: 229
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +446,10 @@ TextureImporter:
       name: drawAssets_17
       rect:
         serializedVersion: 2
-        x: 6937
-        y: 4800
-        width: 623
-        height: 499
+        x: 1140
+        y: 2030
+        width: 297
+        height: 171
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +467,10 @@ TextureImporter:
       name: drawAssets_18
       rect:
         serializedVersion: 2
-        x: 1435
-        y: 4777
-        width: 189
-        height: 283
+        x: 1504
+        y: 2014
+        width: 159
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +488,10 @@ TextureImporter:
       name: drawAssets_19
       rect:
         serializedVersion: 2
-        x: 5161
-        y: 4316
-        width: 305
-        height: 178
+        x: 1739
+        y: 2060
+        width: 117
+        height: 118
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +509,10 @@ TextureImporter:
       name: drawAssets_20
       rect:
         serializedVersion: 2
-        x: 268
-        y: 3511
-        width: 452
-        height: 461
+        x: 1928
+        y: 2050
+        width: 137
+        height: 132
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +530,10 @@ TextureImporter:
       name: drawAssets_21
       rect:
         serializedVersion: 2
-        x: 6685
-        y: 3102
-        width: 570
-        height: 922
+        x: 2113
+        y: 2006
+        width: 240
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,10 +551,10 @@ TextureImporter:
       name: drawAssets_25
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 3467
-        width: 493
-        height: 392
+        x: 1672
+        y: 1776
+        width: 174
+        height: 178
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +572,10 @@ TextureImporter:
       name: drawAssets_26
       rect:
         serializedVersion: 2
-        x: 2741
-        y: 3559
-        width: 121
-        height: 126
+        x: 1954
+        y: 1832
+        width: 108
+        height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +593,10 @@ TextureImporter:
       name: drawAssets_27
       rect:
         serializedVersion: 2
-        x: 7045
-        y: 2458
-        width: 126
-        height: 135
+        x: 2512
+        y: 1120
+        width: 567
+        height: 916
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,12 +614,12 @@ TextureImporter:
       name: drawAssets_28
       rect:
         serializedVersion: 2
-        x: 7062
-        y: 2303
-        width: 121
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 100
+        y: 0
+        width: 1247
+        height: 1388
+      alignment: 9
+      pivot: {x: 0.8820592, y: 0.039386727}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -651,10 +635,10 @@ TextureImporter:
       name: drawAssets_29
       rect:
         serializedVersion: 2
-        x: 3855
-        y: 3150
-        width: 135
-        height: 143
+        x: 1660
+        y: 836
+        width: 662
+        height: 692
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +656,10 @@ TextureImporter:
       name: drawAssets_30
       rect:
         serializedVersion: 2
-        x: 5114
-        y: 3141
-        width: 143
-        height: 150
+        x: 1346
+        y: 29
+        width: 1122
+        height: 687
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,148 +674,106 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: drawAssets_1
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 3614
+        width: 296
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8c1ff5a6666a94da50868d50458d2d
+      internalID: -309948248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drawAssets_22
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1528
+        width: 443
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32497e87a878ddf408258ee0a29feb50
+      internalID: -1001224720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drawAssets_23
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1592
+        width: 486
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fd2aba9989d4946a2faa74f42d17a1
+      internalID: -576320274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: drawAssets_24
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1568
+        width: 286
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45046c8bc4499b443a4bfdce631c9915
+      internalID: 1347054560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: drawAssets_31
       rect:
         serializedVersion: 2
-        x: 2824
-        y: 2557
-        width: 182
-        height: 187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e0166e83129db84d965abbbab5b4f2a
-      internalID: 194246670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawAssets_32
-      rect:
-        serializedVersion: 2
-        x: 3372
-        y: 2527
-        width: 147
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63887643d8745b246b4be6cc4277875f
-      internalID: 1587456905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawAssets_33
-      rect:
-        serializedVersion: 2
-        x: 4186
-        y: 2375
-        width: 139
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3728cadc0ecfec14f9539974b749d5b1
-      internalID: 2147105855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawAssets_34
-      rect:
-        serializedVersion: 2
-        x: 5135
-        y: 2214
-        width: 247
-        height: 204
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4320d4d6f566bec4fb887f07f723440d
-      internalID: -168105473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawAssets_35
-      rect:
-        serializedVersion: 2
-        x: 3624
-        y: 2210
-        width: 118
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 469fef930ac0ced478da81f315f0a85b
-      internalID: 1512328598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawAssets_36
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 0
-        width: 1253
-        height: 1591
+        x: 1582
+        y: 3602
+        width: 904
+        height: 494
       alignment: 9
-      pivot: {x: 0.85831094, y: 0.13588418}
+      pivot: {x: 0.6919391, y: 0.5339291}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45aa2bd6d018fea4b88452fa5c86d18b
-      internalID: 40374371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: drawAssets_37
-      rect:
-        serializedVersion: 2
-        x: 2558
-        y: 337
-        width: 1132
-        height: 697
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88fcdba0d366651488259e300a78439b
-      internalID: -1006542811
+      spriteID: 8a0f2a027d2495641bfaa7f1d3eb37b5
+      internalID: 194246670
       vertices: []
       indices: 
       edges: []
@@ -873,12 +815,6 @@ TextureImporter:
       drawAssets_3: -2047474071
       drawAssets_30: -499140691
       drawAssets_31: 194246670
-      drawAssets_32: 1587456905
-      drawAssets_33: 2147105855
-      drawAssets_34: -168105473
-      drawAssets_35: 1512328598
-      drawAssets_36: 40374371
-      drawAssets_37: -1006542811
       drawAssets_4: -1979806958
       drawAssets_5: -1258547258
       drawAssets_6: 616822168
