@@ -3547,23 +3547,23 @@ PrefabInstance:
       objectReference: {fileID: 1093033791, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.1679
+      value: 0.60013705
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.1679
+      value: 0.60013705
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1679
+      value: 0.60013705
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.25
+      value: -11.65
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.67
+      value: -3.52
       objectReference: {fileID: 0}
     - target: {fileID: 5291766057066726424, guid: 7eae307000e19a74f89131a9bc8a08ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37868,7 +37868,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2846153, y: 1.3153846}
+    oldSize: {x: 4.7384615, y: 3.7846153}
     newSize: {x: 2.323077, y: 1.3461539}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -38004,7 +38004,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 915836448, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
+  m_Sprite: {fileID: 2069378866, guid: e5a24e47a33f3b049b2ee89d2acfaf58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
