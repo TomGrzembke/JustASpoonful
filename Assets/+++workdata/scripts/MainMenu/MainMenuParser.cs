@@ -30,6 +30,7 @@ namespace JustASpoonful
         {
             SceneLoader.Instance.LoadSceneViaIndex(gameObject.scene.buildIndex + 1);
             SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
+            TouchCheck.Instance.StopCheck();
         }
 
         public void OpenURL(string link)
