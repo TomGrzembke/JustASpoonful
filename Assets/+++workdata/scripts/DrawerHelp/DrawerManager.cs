@@ -44,6 +44,12 @@ namespace JustASpoonful
                 StopCoroutine(dragRoutine);
             dragRoutine = StartCoroutine(LerpToTarget(toRight));
         }
+        public void DragFully()
+        {
+            if (dragRoutine != null)
+                StopCoroutine(dragRoutine);
+            dragRoutine = StartCoroutine(LerpToTarget(true));
+        }
 
         IEnumerator LerpToTarget(bool toRight)
         {
@@ -56,6 +62,11 @@ namespace JustASpoonful
                 drawerTrans.position = Vector3.Lerp(drawerPos, toRight ? rightPosition : initialPos, timeSpent / moveTime);
                 yield return null;
             }
+        }
+
+        public void DestroyObj(GameObject objToDestroy)
+        {
+            Destroy(objToDestroy);
         }
     }
 }
