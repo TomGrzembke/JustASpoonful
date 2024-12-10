@@ -1,80 +1,78 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace JustASpoonful
+public class Pickupable : MonoBehaviour, IPickupable
 {
-    public class Pickupable : MonoBehaviour, IPickupable
+    [SerializeField] Interactable interactable;
+    [SerializeField] List<GameObject> alternUI;
+    [SerializeField] bool reenableVisualAfterSolved;
+    /// <summary> Used when multiple objects are usable for the object </summary>
+
+
+    public void Pickup()
     {
-        [SerializeField] Interactable interactable;
-        [SerializeField] List<GameObject> alternUI;
-        [SerializeField] bool reenableVisualAfterSolved;
-        /// <summary> Used when multiple objects are usable for the object </summary>
+        gameObject.SetActive(false);
 
+        if (CheckAssigned(interactable))
+            interactable.GetUIObject().SetActive(true);
 
-        public void Pickup()
-        {
+        GameStateManager.Instance.AddPickupable(this);
+    }
+
+    public void Pickup(GameObject alternUIObj)
+    {
+        alternUI.Add(alternUIObj);
+        gameObject.SetActive(false);
+
+        if (CheckAssigned(alternUIObj))
+            alternUIObj.SetActive(true);
+
+        else if (CheckAssigned(interactable))
+            interactable.GetUIObject().SetActive(true);
+
+        GameStateManager.Instance.AddPickupable(this);
+    }
+
+    public void Drop()
+    {
+        gameObject.SetActive(true);
+        if (!reenableVisualAfterSolved && interactable.solved)
             gameObject.SetActive(false);
 
-            if (CheckAssigned(interactable))
-                interactable.GetUIObject().SetActive(true);
+        if (interactable.solved)
+            GetComponent<Collider2D>().enabled = false;
 
-            GameStateManager.Instance.AddPickupable(this);
-        }
+        if (CheckAssigned(interactable))
+            if (CheckAssigned(interactable.GetUIObject()))
+                interactable.GetUIObject().SetActive(false);
 
-        public void Pickup(GameObject alternUIObj)
-        {
-            alternUI.Add(alternUIObj);
-            gameObject.SetActive(false);
-
-            if (CheckAssigned(alternUIObj))
-                alternUIObj.SetActive(true);
-
-            else if (CheckAssigned(interactable))
-                interactable.GetUIObject().SetActive(true);
-
-            GameStateManager.Instance.AddPickupable(this);
-        }
-
-        public void Drop()
-        {
-            gameObject.SetActive(true);
-            if(!reenableVisualAfterSolved && interactable.solved)
-                gameObject.SetActive(false);
-
-            if (interactable.solved)
-                GetComponent<Collider2D>().enabled = false;
-
-            if (CheckAssigned(interactable))
-                if (CheckAssigned(interactable.GetUIObject()))
-                    interactable.GetUIObject().SetActive(false);
-
-            if (alternUI.Count > 0)
-                for (int i = 0; i < alternUI.Count; i++)
-                {
-                    alternUI[i].SetActive(false);
-                }
-        }
-
-        public bool CheckAssigned(MonoBehaviour script)
-        {
-            if (script != null)
-                return true;
-            else
+        if (alternUI.Count > 0)
+            for (int i = 0; i < alternUI.Count; i++)
             {
-                Debug.LogWarning("At " + gameObject.name + " has no assigned Interactable");
-                return false;
+                alternUI[i].SetActive(false);
             }
-        }
+    }
 
-        public bool CheckAssigned(GameObject gO)
+    public bool CheckAssigned(MonoBehaviour script)
+    {
+        if (script != null)
+            return true;
+        else
         {
-            if (gO != null)
-                return true;
-            else
-            {
-                Debug.LogWarning("At " + gameObject.name + " has no assigned Interactable");
-                return false;
-            }
+            Debug.LogWarning("At " + gameObject.name + " has no assigned Interactable");
+            return false;
+        }
+    }
+
+    public bool CheckAssigned(GameObject gO)
+    {
+        if (gO != null)
+            return true;
+        else
+        {
+            Debug.LogWarning("At " + gameObject.name + " has no assigned Interactable");
+            return false;
         }
     }
 }
+

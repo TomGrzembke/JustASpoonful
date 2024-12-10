@@ -2,7 +2,8 @@
     "name": "InteractLifecycle",
     "rootNamespace": "",
     "references": [
-        "Management"
+        "Management",
+        "Extensions"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
