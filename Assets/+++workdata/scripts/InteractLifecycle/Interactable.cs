@@ -10,6 +10,8 @@ public class Interactable : MonoBehaviour
     [SerializeField] GameObject starObj;
     [SerializeField] UnityEvent onSolved;
     [SerializeField] UnityEvent onAnimPlayed;
+    [SerializeField] int clickAmountToSolve = 1;
+    int clickAmount;
     public bool solved { get; private set; }
 
     #region Cashed vars
@@ -40,7 +42,10 @@ public class Interactable : MonoBehaviour
         solved = true;
         starObj.SetActive(false);
         onSolved?.Invoke();
-        GameStateManager.Instance.DesubscribeInteractable(this);
+
+        clickAmount++;
+        if (clickAmount >= clickAmountToSolve)
+            GameStateManager.Instance.DesubscribeInteractable(this);
 
         if (disableColOnInteract)
             col.enabled = false;

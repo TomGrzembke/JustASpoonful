@@ -36,6 +36,7 @@ public class Pickupable : MonoBehaviour, IPickupable
     public void Drop()
     {
         gameObject.SetActive(true);
+
         if (!reenableVisualAfterSolved && interactable.solved)
             gameObject.SetActive(false);
 

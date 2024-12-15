@@ -41,7 +41,8 @@ public class GameStateManager : MonoBehaviour
 
     public void AddPickupable(Pickupable pickupable)
     {
-        currentDropable?.Drop();
+        if (currentDropable)
+            currentDropable.Drop();
         currentDropable = pickupable;
     }
 
