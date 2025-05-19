@@ -66,7 +66,7 @@ public class HintManager : MonoBehaviour
     {
         interactables.Clear();
         interactSpecific.Clear();
-        List<EventTrigger> _interactables = FindObjectsOfType<EventTrigger>().ToList();
+        List<EventTrigger> _interactables = FindObjectsByType<EventTrigger>(FindObjectsSortMode.InstanceID).ToList();
 
         interactables = _interactables.ToList();
         interactSpecific = _interactables.ToList();
