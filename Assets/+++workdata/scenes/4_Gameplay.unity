@@ -28638,6 +28638,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 113980054288519563, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
   m_PrefabInstance: {fileID: 979083188}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &979818770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979818771}
+  - component: {fileID: 979818772}
+  m_Layer: 0
+  m_Name: SealHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &979818771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979818770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1092987663}
+  m_Father: {fileID: 1593624244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &979818772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979818770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f583e1c91fbc1e9438ec657c916b2d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedbackStrengthCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  wiggleSpace: 1
+  wiggleTime: 1
 --- !u!1 &980229290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6096319153974330701, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
@@ -31729,6 +31782,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 979818772}
+          m_TargetAssemblyTypeName: ClickFeedback, InteractLifecycle
+          m_MethodName: Wiggle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 0
     callback:
       m_PersistentCalls:
@@ -31826,13 +31891,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0142825525, w: 0.999898}
   m_LocalPosition: {x: -8.6, y: -3, z: 0}
-  m_LocalScale: {x: 0.1791069, y: 0.1908849, z: 0.1908849}
+  m_LocalScale: {x: 0.17910689, y: 0.1908849, z: 0.1908849}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2139125433}
   - {fileID: 126185460}
   - {fileID: 9077446947712025966}
-  m_Father: {fileID: 1593624244}
+  m_Father: {fileID: 979818771}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.637}
 --- !u!114 &1092987664
 MonoBehaviour:
@@ -43283,7 +43348,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1071319290}
-  - {fileID: 1092987663}
+  - {fileID: 979818771}
   - {fileID: 161411898}
   - {fileID: 297585398}
   - {fileID: 1764865320}
