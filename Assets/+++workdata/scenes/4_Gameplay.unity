@@ -6004,7 +6004,6 @@ Transform:
   - {fileID: 1380424758}
   - {fileID: 329950062}
   - {fileID: 739197172}
-  - {fileID: 1900058491}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &212880231
@@ -28683,14 +28682,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f583e1c91fbc1e9438ec657c916b2d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wiggleSpace: 3
+  wiggleTime: 1
   feedbackStrengthCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  wiggleSpace: 1
-  wiggleTime: 1
+  interactMaxStrengthTimes: 30
 --- !u!1 &980229290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6096319153974330701, guid: 2bd4b23b7c430dc49a0130a6e885a7e3, type: 3}
@@ -29890,6 +29908,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1029836519}
   - component: {fileID: 1029836518}
+  - component: {fileID: 1029836521}
+  - component: {fileID: 1029836520}
   m_Layer: 0
   m_Name: boll
   m_TagString: Untagged
@@ -29967,6 +29987,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 122867983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029836520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029836517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f583e1c91fbc1e9438ec657c916b2d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wiggleSpace: 1
+  wiggleTime: 3
+  feedbackStrengthCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  interactMaxStrengthTimes: 20
+--- !u!114 &1029836521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029836517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1029836520}
+          m_TargetAssemblyTypeName: ClickFeedback, InteractLifecycle
+          m_MethodName: Wiggle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1033943730
 GameObject:
   m_ObjectHideFlags: 0
@@ -33831,6 +33927,7 @@ Transform:
   - {fileID: 971243173}
   - {fileID: 392539187}
   - {fileID: 1555258109}
+  - {fileID: 1900058491}
   m_Father: {fileID: 210499995}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1173349636
@@ -52032,10 +52129,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.13231407, w: 0.99120784}
   m_LocalPosition: {x: -19.13, y: 15.7, z: 0}
-  m_LocalScale: {x: 0.93595016, y: 1.0794892, z: 1.0933067}
+  m_LocalScale: {x: 0.9359501, y: 1.0794892, z: 1.0933067}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 210499995}
+  m_Father: {fileID: 1173349635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.207}
 --- !u!212 &1900058492
 SpriteRenderer:

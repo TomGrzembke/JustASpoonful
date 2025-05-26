@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class ClickFeedback : MonoBehaviour
 {
-    [SerializeField] AnimationCurve feedbackStrengthCurve;
     [SerializeField] float wiggleSpace = 1;
-    [SerializeField] float wiggleTime;
+    [SerializeField] float wiggleTime = 3;
+    [SerializeField] AnimationCurve feedbackStrengthCurve = AnimationCurve.EaseInOut(0,0, 1, 1);
+    [SerializeField] int interactMaxStrengthTimes = 20;
+    int currentInteractStrengthTimes = 0;
     Vector3 startPos;
     Coroutine wiggleRoutine;
 
@@ -28,18 +30,21 @@ public class ClickFeedback : MonoBehaviour
     {
         var currentStartPos = transform.position;
         var timeWentBy = 0f;
+        var randomRangeX = GetRandomWiggleRange();
+        var randomRangeY = GetRandomWiggleRange();
 
+        currentInteractStrengthTimes++;
         while (timeWentBy < wiggleTime / 2)
         {
             transform.position = Vector3.Slerp(currentStartPos,
-                currentStartPos + new Vector3(GetRandomWiggleRange(), GetRandomWiggleRange(), 0),
+                currentStartPos + new Vector3(randomRangeX, randomRangeY, 0),
                 timeWentBy / wiggleTime);
 
             timeWentBy += Time.deltaTime;
             yield return null;
         }
 
-        timeWentBy = 0;
+        timeWentBy = 0f;
         while (timeWentBy < wiggleTime / 2)
         {
             transform.position = Vector3.Slerp(transform.position, startPos,
@@ -52,6 +57,7 @@ public class ClickFeedback : MonoBehaviour
 
     public float GetRandomWiggleRange() 
     {
-        return Random.Range(-1, 1f) * wiggleSpace;
+        var strength = feedbackStrengthCurve.Evaluate((float)currentInteractStrengthTimes / interactMaxStrengthTimes);
+        return Random.Range(-1, 1f) * wiggleSpace * strength;
     }
 }
