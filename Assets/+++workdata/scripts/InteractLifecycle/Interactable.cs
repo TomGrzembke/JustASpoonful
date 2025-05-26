@@ -64,7 +64,7 @@ public class Interactable : MonoBehaviour
             return true;
         else
         {
-            Debug.Log("Has no assigned Interactable", gameObject);
+            //Debug.Log("Has no assigned Interactable", gameObject);
             return false;
         }
     }

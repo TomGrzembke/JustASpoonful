@@ -21,9 +21,15 @@ namespace JustASpoonful
         Collider2D thisCollider2D;
         SpriteRenderer sr;
         int originalOrderInLayer;
+        Vector3 lastDragPos;
+        Vector3 secondLastDragPos;
         #endregion
 
         [SerializeField] ObjID objID;
+        /// <summary> -1 means ignore here </summary>
+        [SerializeField] int newOrderInLayer = -1;
+        [SerializeField] Rigidbody2D rb;
+        [SerializeField] float throwStrength = 40;
         public bool isBeingDragged { get; private set; }
 
         void Awake()
@@ -49,6 +55,9 @@ namespace JustASpoonful
             newObjPos = mainCam.ScreenToWorldPoint(cursorPos);
             newObjPos = new(newObjPos.x, newObjPos.y, 0);
             transform.position = newObjPos;
+
+            secondLastDragPos = lastDragPos;
+            lastDragPos = transform.position;
         }
 
         public ObjID GetObjID()
@@ -58,9 +67,15 @@ namespace JustASpoonful
 
         public void SetIsBeingDragged(bool condition)
         {
-            sr.sortingOrder = condition ? originalOrderInLayer + 100 : originalOrderInLayer;
+            var currentOrderInLayer = newOrderInLayer == -1 ? originalOrderInLayer : newOrderInLayer;
+            sr.sortingOrder = condition ? originalOrderInLayer + 100 : currentOrderInLayer;
             isBeingDragged = condition;
             thisCollider2D.enabled = !condition;
+
+            if (rb != null)
+            {
+                rb.AddForce((lastDragPos - secondLastDragPos) * throwStrength);
+            }
         }
 
         #region OnEnable/Disable
