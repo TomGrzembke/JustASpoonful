@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - BlockingObjectSoft
-  - BlockingObjectHard
   - Movable
   layers:
   - Default
