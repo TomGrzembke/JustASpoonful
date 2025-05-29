@@ -23,6 +23,7 @@ namespace JustASpoonful
 
         public void Quit()
         {
+            GameSettings.Instance.OnScreenToggleChanged(false);
             Application.Quit();
         }
 

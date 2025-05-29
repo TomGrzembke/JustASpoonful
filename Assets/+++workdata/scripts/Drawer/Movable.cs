@@ -23,6 +23,7 @@ namespace JustASpoonful
         int originalOrderInLayer;
         Vector3 lastDragPos;
         Vector3 secondLastDragPos;
+        bool isSolved;
         #endregion
 
         [SerializeField] ObjID objID;
@@ -49,6 +50,8 @@ namespace JustASpoonful
 
         public void MoveAlongCursor()
         {
+            if (isSolved) return;
+
             SetIsBeingDragged(true);
             if (!mainCam)
                 mainCam = Camera.main;
@@ -76,6 +79,11 @@ namespace JustASpoonful
             {
                 rb.AddForce((lastDragPos - secondLastDragPos) * throwStrength);
             }
+        }
+
+        public void SetIsSolved(bool condition)
+        {
+            isSolved = true;
         }
 
         #region OnEnable/Disable

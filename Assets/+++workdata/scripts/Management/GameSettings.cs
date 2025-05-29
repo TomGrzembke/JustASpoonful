@@ -79,6 +79,11 @@ public class GameSettings : MonoBehaviour
     {
         ScreenToggle = condition;
         Screen.fullScreen = ScreenToggle;
+
+        if (Screen.fullScreen)
+        {
+            Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+        }
     }
 
     public void OpenURL(string link)
