@@ -9,13 +9,15 @@ namespace JustASpoonful
         [SerializeField] Transform returnPoint;
         [SerializeField] float returnSpeed = 25;
 
+        [SerializeField] string moveTag = "Movable";
+
         [SerializeField] Dictionary<GameObject, Coroutine> returnList = new();
         
 
 
         void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.CompareTag("Movable"))
+            if (col.CompareTag(moveTag))
             {
                 if (!returnList.ContainsKey(col.gameObject))
                 {
@@ -27,7 +29,7 @@ namespace JustASpoonful
 
         void OnTriggerExit2D(Collider2D col)
         {
-            if (col.CompareTag("Movable"))
+            if (col.CompareTag(moveTag))
             {
                 if (returnList.TryGetValue(col.gameObject, out Coroutine outRountine))
                     StopCoroutine(outRountine);
