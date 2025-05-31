@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class GameSettings : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class GameSettings : MonoBehaviour
     void Awake()
     {
         Instance = this;
+    }
+
+    void Start()
+    {
+        OnScreenToggleChanged(ScreenToggle);
     }
 
     #region Serilized Fields
@@ -44,6 +50,8 @@ public class GameSettings : MonoBehaviour
         }
     }
 
+    
+
     Slider musicSlider, sfxSlider;
     Toggle screenToggle;
     Coroutine sfxChangedCoroutine;
@@ -78,12 +86,13 @@ public class GameSettings : MonoBehaviour
     public void OnScreenToggleChanged(bool condition)
     {
         ScreenToggle = condition;
-        Screen.fullScreen = ScreenToggle;
 
-        if (Screen.fullScreen)
-        {
-            Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
-        }
+#if UNITY_EDITOR
+        EditorWindow.focusedWindow.maximized = condition;
+#else
+        Screen.fullScreen = condition;
+#endif
+
     }
 
     public void OpenURL(string link)
@@ -111,10 +120,12 @@ public class GameSettings : MonoBehaviour
         sfxSlider.value = SFXVolume;
         sfxSlider.onValueChanged.AddListener(OnSfxSliderChanged);
     }
+
     public void SubscribeFullscreenToggle(Toggle _fullscreenToggle)
     {
         screenToggle = _fullscreenToggle;
         screenToggle.isOn = ScreenToggle;
+
         screenToggle.onValueChanged.AddListener(OnScreenToggleChanged);
     }
 }

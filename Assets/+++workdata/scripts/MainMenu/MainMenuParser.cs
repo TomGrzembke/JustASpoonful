@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace JustASpoonful
 {
@@ -23,8 +22,15 @@ namespace JustASpoonful
 
         public void Quit()
         {
-            GameSettings.Instance.OnScreenToggleChanged(false);
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#elif PLATFORM_WEBGL
+            
+            Screen.fullScreen = false;
             Application.Quit();
+#else
+            Application.Quit();
+#endif
         }
 
         public void NextScene()

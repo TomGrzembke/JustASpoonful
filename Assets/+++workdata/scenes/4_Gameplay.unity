@@ -14940,6 +14940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 393852413}
   - component: {fileID: 393852414}
+  - component: {fileID: 393852415}
   m_Layer: 0
   m_Name: MobileManager
   m_TagString: Untagged
@@ -14979,6 +14980,19 @@ MonoBehaviour:
   settingsScreen: {fileID: 1872359337}
   currentScreen: {fileID: 0}
   screenHistory: []
+--- !u!114 &393852415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393852412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7cc871117f2784989d017e88c1faa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuObjects: []
 --- !u!1 &397007321
 GameObject:
   m_ObjectHideFlags: 0
@@ -56825,8 +56839,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 393852414}
-        m_TargetAssemblyTypeName: JustASpoonful.MobileManager, Mobile
+      - m_Target: {fileID: 393852415}
+        m_TargetAssemblyTypeName: JustASpoonful.MainMenuParser, MainMenu
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:

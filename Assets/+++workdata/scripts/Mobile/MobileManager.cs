@@ -123,11 +123,6 @@ namespace JustASpoonful
             SceneLoader.Instance.UnloadSceneViaIndex(gameObject.scene.buildIndex);
         }
 
-        public void Quit()
-        {
-            Application.Quit();
-        }
-
         void OnEnable()
         {
             input.Enable();
