@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickupable : MonoBehaviour, IPickupable
+public class Pickupable : MonoBehaviour
 {
     [SerializeField] Interactable interactable;
     [SerializeField] List<GameObject> alternUI;

@@ -1,4 +1,8 @@
+using UnityEngine;
+
 public interface IPickupable
 {
-    void Drop();
+    public void Pickup();
+    public void Pickup(GameObject alternUIObj);
+    public void Drop();
 }
