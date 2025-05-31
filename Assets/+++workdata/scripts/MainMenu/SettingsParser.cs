@@ -11,8 +11,11 @@ public class SettingsParser : MonoBehaviour
 
     void SubscribeFunctions()
     {
-        GameSettings.Instance.SubscribeMusicSlider(musicSlider);
-        GameSettings.Instance.SubscribeSFXSlider(sfxSlider);
-        GameSettings.Instance.SubscribeFullscreenToggle(screenToggle);
+        if (musicSlider)
+            GameSettings.Instance.SubscribeMusicSlider(musicSlider);
+        if (sfxSlider)
+            GameSettings.Instance.SubscribeSFXSlider(sfxSlider);
+        if (screenToggle)
+            GameSettings.Instance.SubscribeFullscreenToggle(screenToggle);
     }
 }

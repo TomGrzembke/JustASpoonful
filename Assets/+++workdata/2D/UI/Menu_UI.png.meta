@@ -3,7 +3,7 @@ guid: f20f4af2c99f509479fdfdef3e9aac56
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -67,20 +67,20 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 50
+    compressionQuality: 84
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,7 +106,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -119,6 +119,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,21 +152,24 @@ TextureImporter:
       name: Menu_UI_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1483
+        x: 39
+        y: 1340
         width: 1283
-        height: 706
+        height: 644
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline:
       - - {x: 402.5, y: -353}
-        - {x: 115.5, y: -292}
+        - {x: 320.5, y: -325}
+        - {x: 151.5, y: -265}
         - {x: -19.5, y: -286}
-        - {x: -641.5, y: -353.5}
+        - {x: -641.5, y: -260}
         - {x: -641.5, y: 353.5}
         - {x: 641.5, y: 353.5}
-        - {x: 641.5, y: -340.5}
+        - {x: 597.5, y: -6}
+        - {x: 538.5, y: -253}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -151,43 +180,17 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_UI_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 825
-        width: 1426
-        height: 675
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -713, y: -326}
-        - {x: -713, y: 337.5}
-        - {x: -187, y: 337.5}
-        - {x: 288, y: 337.5}
-        - {x: 713, y: 337.5}
-        - {x: 713, y: -326}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dac5339d68e3bf49ac195696dba7ecd
-      internalID: -1901932013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Menu_UI_2
       rect:
         serializedVersion: 2
-        x: 1511
-        y: 894
-        width: 588
-        height: 454
+        x: 84
+        y: 192
+        width: 772
+        height: 413
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -202,13 +205,14 @@ TextureImporter:
       name: Menu_UI_3
       rect:
         serializedVersion: 2
-        x: 818
-        y: 687
-        width: 1376
+        x: 262
+        y: 51
+        width: 1230
         height: 133
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -223,14 +227,21 @@ TextureImporter:
       name: Menu_UI_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 44
+        y: 604
         width: 1424
         height: 687
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      customData: 
+      outline:
+      - - {x: -712, y: -343.5}
+        - {x: 712, y: -343.5}
+        - {x: 712, y: 61.5}
+        - {x: 630, y: 216.5}
+        - {x: 406, y: 283.5}
+        - {x: -712, y: 343.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -241,6 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -250,6 +262,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
       Menu_UI_0: -353226985
       Menu_UI_1: -1328216941
