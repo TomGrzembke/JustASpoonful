@@ -13,7 +13,7 @@ Simplest Way
 An instant run WebGL embed is available at itch.io: https://sillysealstudio.itch.io/just-a-spoonful
 
 # Requirements
-Unity Version: 6000.0.58f2
+Unity Version: 6000.3.10f1
 
 ## Packages: 
 - [Deadcows Mybox](https://github.com/Deadcows/MyBox.git) (Editor Utils and Handy Extension Methods)
