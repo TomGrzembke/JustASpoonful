@@ -20,11 +20,12 @@ Unity Version: 6000.0.58f2
 
 
 <div align="center">
+The Systems provided utilize the [Event Trigger Component](https://docs.unity3d.com/Packages/com.unity.ugui@2.5/manual/script-EventTrigger.html) and are the core of this projects mechanics.
 
   System | Script | Purpose | 
   --- | --- | --- | 
-  Pickupable | [See here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Pickupable.cs) | "Picks up" an object and activates the provided UI Object used in Comination with the Interactables.|
-  Interactable | [See here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Interactable.cs) | Utility for a UnityEvent-based workflow for objects that should simply dispatch OnClick or even require items to be solved with.| 
-  Movable | [See here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/Drawer/Movable.cs) | Allows moving objects to solve sorting riddles.| 
+  Pickupable | [Read here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Pickupable.cs) | "Picks up" an object and activates the provided UI Object used in Comination with the Interactables.|
+  Interactable | [Take a glance](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Interactable.cs) | Utility for a UnityEvent-based workflow for objects that should simply dispatch OnClick or even require items to be solved with.| 
+  Movable | [Flip Through](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/Drawer/Movable.cs) | Allows moving objects to solve sorting riddles.| 
 
 </div>
