@@ -17,11 +17,11 @@ Unity Version: 6000.0.58f2
 - "New" Input System
 
 ## Code Examples
-
+The Systems provided utilize the [Event Trigger Component](https://docs.unity3d.com/Packages/com.unity.ugui@2.5/manual/script-EventTrigger.html) and are the core of this project's mechanics.
 
 <div align="center">
-The Systems provided utilize the Event Trigger Component and are the core of this project's mechanics.
 
+  
   System | Script | Purpose | 
   --- | --- | --- | 
   Pickupable | [Read here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Pickupable.cs) | "Picks up" an object and activates the provided UI Object used in Comination with the Interactables.|
