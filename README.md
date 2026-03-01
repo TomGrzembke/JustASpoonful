@@ -20,7 +20,7 @@ Unity Version: 6000.0.58f2
 
 
 <div align="center">
-The Systems provided utilize the [Event Trigger Component](https://docs.unity3d.com/Packages/com.unity.ugui@2.5/manual/script-EventTrigger.html) and are the core of this projects mechanics.
+The Systems provided utilize the Event Trigger Component and are the core of this project's mechanics.
 
   System | Script | Purpose | 
   --- | --- | --- | 
