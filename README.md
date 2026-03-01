@@ -10,6 +10,10 @@ An instant run WebGL embed is available at itch.io: https://sillysealstudio.itch
 
 # Requirements
 Unity Version: 6000.0.58f2
-Packages: [Deadcows Mybox](https://github.com/Deadcows/MyBox.git) (Editor Utils and Handy Extension Methods), Cinemachine, "New" Input System
+
+## Packages: 
+- [Deadcows Mybox](https://github.com/Deadcows/MyBox.git) (Editor Utils and Handy Extension Methods)
+- Cinemachine
+- "New" Input System
 
 ## Code Examples
