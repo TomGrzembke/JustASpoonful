@@ -1,7 +1,11 @@
 # Just A Spoonful
 
-A Calming hidden object experience about the Spoon Theory. Created in Unity Engine. Task: Create a 2D point-and-click experience.
+A Calming hidden object experience about the Spoon Theory. 
+Created in Unity Engine. 
+Task: Create a 2D point-and-click experience.
+
 This Project has 3 complete Code refactors behind it and is sometimes taken for exhibiting by me at Events like Talk and Play. 
+
 Release date: 06.07.2022
 
 # How To Run
