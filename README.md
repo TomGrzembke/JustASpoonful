@@ -25,6 +25,8 @@ The Systems provided utilize the [Event Trigger Component](https://docs.unity3d.
 WebGL embed is available at itch.io: https://sillysealstudio.itch.io/just-a-spoonful
 
 # Project Facts:
+- Was Part of [Talk & Play 51 ](https://www.flickr.com/photos/12601747@N00/54582510980/in/album-72177720326780552)
+
 This Project has 2 complete Code refactors behind it and is sometimes taken for exhibiting by me at Events like Talk and Play. 
 - Release date: 06.07.2022
 - Unity Version: 6000.3.10f1
