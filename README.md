@@ -5,6 +5,9 @@ A Calming hidden object experience about the Spoon Theory.
 - Programming in this Project was done entirely by me.
 - Task: Create a 2D point-and-click experience.
 
+<img width="185" height="177" alt="SealIcon" src="https://github.com/user-attachments/assets/c7afde30-b986-45b7-8bee-add98be2d630" />
+
+
 # Responsibility
 The Systems provided utilize the [Event Trigger Component](https://docs.unity3d.com/Packages/com.unity.ugui@2.5/manual/script-EventTrigger.html) and are the core of this project's mechanics.
 
