@@ -11,7 +11,7 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] List<Interactable> interactableInstigator = new();
     [SerializeField] List<Interactable> interactableDoneInstigator = new();
     [SerializeField] GameObject endButton;
-    [SerializeField] Pickupable currentDropable;
+    [SerializeField] PickupItem currentDropable;
 
     void Awake()
     {
@@ -27,7 +27,9 @@ public class GameStateManager : MonoBehaviour
     public void DesubscribeInteractable(Interactable interactable)
     {
         if (interactableInstigator.Remove(interactable))
+        {
             OnInteractablesChanged?.Invoke(InteractInstigatorAmount);
+        }
 
         interactableDoneInstigator.Add(interactable);
 
@@ -39,18 +41,24 @@ public class GameStateManager : MonoBehaviour
         RefreshInsitigators();
     }
 
-    public void AddPickupable(Pickupable pickupable)
+    public void AddPickupable(PickupItem pickupItem)
     {
         if (currentDropable)
+        {
             currentDropable.Drop();
-        currentDropable = pickupable;
+        }
+
+        currentDropable = pickupItem;
     }
 
     public void RegisterOnInteractableChanged(Action<int> callback, bool getInstantCallback = false)
     {
         OnInteractablesChanged += callback;
+
         if (getInstantCallback)
+        {
             callback(InteractInstigatorAmount);
+        }
     }
 
     public void RefreshInsitigators()
@@ -59,4 +67,3 @@ public class GameStateManager : MonoBehaviour
         interactableDoneInstigator.RemoveAll(x => x == null);
     }
 }
-

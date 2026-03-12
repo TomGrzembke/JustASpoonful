@@ -5,8 +5,10 @@ public class Interactable : MonoBehaviour
 {
     [SerializeField] bool disableColOnInteract = true;
     [SerializeField] bool neededForWin = true;
-    [Tooltip("Will invoke onSolved if null and clicked")]
-    [SerializeField] GameObject uIObject;
+
+    [Tooltip("Will invoke onSolved if null and clicked")] [SerializeField]
+    GameObject uIObject;
+
     [SerializeField] GameObject starObj;
     [SerializeField] UnityEvent onSolved;
     [SerializeField] UnityEvent onAnimPlayed;
@@ -14,9 +16,7 @@ public class Interactable : MonoBehaviour
     int clickAmount;
     public bool solved { get; private set; }
 
-    #region Cashed vars
     Collider2D col;
-    #endregion
 
     void Awake()
     {
@@ -28,8 +28,9 @@ public class Interactable : MonoBehaviour
     public void OnInteract()
     {
         if (!uIObject)
+        {
             OnSolved();
-
+        }
         else if (uIObject.activeInHierarchy)
         {
             uIObject.SetActive(false);
@@ -45,10 +46,14 @@ public class Interactable : MonoBehaviour
 
         clickAmount++;
         if (clickAmount >= clickAmountToSolve)
+        {
             GameStateManager.Instance.DesubscribeInteractable(this);
+        }
 
         if (disableColOnInteract)
+        {
             col.enabled = false;
+        }
     }
 
     public GameObject GetUIObject()
@@ -58,6 +63,7 @@ public class Interactable : MonoBehaviour
         else
             return null;
     }
+
     public bool CheckAssigned(GameObject obj)
     {
         if (obj != null)
@@ -95,4 +101,3 @@ public class Interactable : MonoBehaviour
         uIObject = newUIObj;
     }
 }
-
