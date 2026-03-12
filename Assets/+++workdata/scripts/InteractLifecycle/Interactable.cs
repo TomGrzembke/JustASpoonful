@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary> Dispatches events onInteract depending on Settings </summary>
 public class Interactable : MonoBehaviour
 {
     [Header("Settings")] [SerializeField] bool disableColOnInteract = true;
@@ -8,11 +9,12 @@ public class Interactable : MonoBehaviour
     [SerializeField] int clickAmountToSolve = 1;
     [SerializeField] bool debugReferenceMissing = false;
 
+    [SerializeField, Tooltip("Can be leftout and will be ignored then")]
+    GameObject uIObject;
+
     [Header("References")] [SerializeField]
     GameObject starObj;
 
-    [Tooltip("Will invoke onSolved if null and clicked")] [SerializeField]
-    GameObject uIObject;
 
     [SerializeField] UnityEvent onSolved;
     [SerializeField] UnityEvent onInteracted;
@@ -37,7 +39,7 @@ public class Interactable : MonoBehaviour
     public void OnInteract()
     {
         if (!CanBeSolved()) return;
-        
+
         onInteracted?.Invoke();
 
         if (ValidateReference(uIObject))
@@ -62,7 +64,7 @@ public class Interactable : MonoBehaviour
     void TrySolve()
     {
         clickAmount++;
-        
+
         if (clickAmount < clickAmountToSolve) return;
 
         Solve();
