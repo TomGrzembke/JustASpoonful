@@ -15,7 +15,7 @@ The Systems provided utilize the [Event Trigger Component](https://docs.unity3d.
   
   System | Script | Purpose | 
   --- | --- | --- | 
-  Pickupable | [Read here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Pickupable.cs) | "Picks up" an object and activates the provided UI Object used in Comination with the Interactables.|
+  PickupItem | [Read here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/PickupItem.cs) | "Picks up" an object and activates the provided UI Object used in Comination with the Interactables.|
   Interactable | [Read here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/InteractLifecycle/Interactable.cs) | Utility for a UnityEvent-based workflow for objects that should simply dispatch OnClick or even require items to be solved with.| 
   Movable | [Read here](https://github.com/TomGrzembke/JustASpoonful/blob/main/Assets/%2B%2B%2Bworkdata/scripts/Drawer/Movable.cs) | Allows moving objects to solve sorting riddles.| 
 
