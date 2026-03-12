@@ -1,100 +1,106 @@
 using UnityEngine;
 
-namespace JustASpoonful
+public enum ObjID
 {
-    public enum ObjID
+    Nothing = 0,
+    Blocker = 10,
+    Seal = 20,
+    Garbage = 30,
+    Spoons = 40,
+}
+
+/// <summary> Moves Objects, acts as a Drag n Drop </summary>
+public class Movable : MonoBehaviour
+{
+    GameControl gameControl;
+    Vector2 cursorPos;
+    Camera mainCam;
+    Vector3 newObjPos;
+    Collider2D col;
+    SpriteRenderer sr;
+    int originalOrderInLayer;
+    Vector3 lastDragPos;
+    Vector3 secondLastDragPos;
+    bool isSolved;
+
+    [SerializeField] ObjID objID;
+
+    /// <summary> -1 means ignore here </summary>
+    [SerializeField] int newOrderInLayer = -1;
+
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] float throwStrength = 40;
+    public bool isBeingDragged { get; private set; }
+
+    void Awake()
     {
-        Nothing,
-        Blocker,
-        Seal,
-        Garbage,
-        Spoons
+        sr = GetComponent<SpriteRenderer>();
+        originalOrderInLayer = sr.sortingOrder;
+        col = GetComponent<Collider2D>();
+        
+        mainCam = Camera.main;
+        
+        gameControl = new();
+        gameControl.GameController.Look.performed += ctx => SetCursorPos(ctx.ReadValue<Vector2>());
     }
 
-    public class Movable : MonoBehaviour
+    void SetCursorPos(Vector2 pos)
     {
-        #region Cashed Vars
-        GameControl gameControl;
-        Vector2 cursorPos;
-        Camera mainCam;
-        Vector3 newObjPos;
-        Collider2D thisCollider2D;
-        SpriteRenderer sr;
-        int originalOrderInLayer;
-        Vector3 lastDragPos;
-        Vector3 secondLastDragPos;
-        bool isSolved;
-        #endregion
+        cursorPos = pos;
+    }
 
-        [SerializeField] ObjID objID;
-        /// <summary> -1 means ignore here </summary>
-        [SerializeField] int newOrderInLayer = -1;
-        [SerializeField] Rigidbody2D rb;
-        [SerializeField] float throwStrength = 40;
-        public bool isBeingDragged { get; private set; }
+    public void MoveAlongCursor()
+    {
+        if (isSolved) return;
 
-        void Awake()
+        SetIsBeingDragged(true);
+
+        if (mainCam == null)
         {
-            sr = GetComponent<SpriteRenderer>();
-            originalOrderInLayer = sr.sortingOrder;
-            thisCollider2D = GetComponent<Collider2D>();
             mainCam = Camera.main;
-            gameControl = new();
-            gameControl.GameController.Look.performed += ctx => SetCursorPos(ctx.ReadValue<Vector2>());
         }
 
-        void SetCursorPos(Vector2 pos)
-        {
-            cursorPos = pos;
-        }
+        newObjPos = (Vector2)mainCam.ScreenToWorldPoint(cursorPos);
+        transform.position = newObjPos;
 
-        public void MoveAlongCursor()
-        {
-            if (isSolved) return;
+        secondLastDragPos = lastDragPos;
+        lastDragPos = transform.position;
+    }
 
-            SetIsBeingDragged(true);
-            if (!mainCam)
-                mainCam = Camera.main;
-            newObjPos = mainCam.ScreenToWorldPoint(cursorPos);
-            newObjPos = new(newObjPos.x, newObjPos.y, 0);
-            transform.position = newObjPos;
+    public ObjID GetObjID()
+    {
+        return objID;
+    }
 
-            secondLastDragPos = lastDragPos;
-            lastDragPos = transform.position;
-        }
+    public void SetIsBeingDragged(bool condition)
+    {
+        var currentOrderInLayer = newOrderInLayer == -1 ? originalOrderInLayer : newOrderInLayer;
+        sr.sortingOrder = condition ? originalOrderInLayer + 100 : currentOrderInLayer;
+        isBeingDragged = condition;
+        col.enabled = !condition;
 
-        public ObjID GetObjID()
-        {
-            return objID;
-        }
+        TryAddForce();
+    }
 
-        public void SetIsBeingDragged(bool condition)
-        {
-            var currentOrderInLayer = newOrderInLayer == -1 ? originalOrderInLayer : newOrderInLayer;
-            sr.sortingOrder = condition ? originalOrderInLayer + 100 : currentOrderInLayer;
-            isBeingDragged = condition;
-            thisCollider2D.enabled = !condition;
+    void TryAddForce()
+    {
+        if (rb == null) return;
 
-            if (rb != null)
-            {
-                rb.AddForce((lastDragPos - secondLastDragPos) * throwStrength);
-            }
-        }
+        rb.AddForce((lastDragPos - secondLastDragPos) * throwStrength);
+    }
 
-        public void SetIsSolved(bool condition)
-        {
-            isSolved = true;
-        }
+    public void SetIsSolved(bool condition)
+    {
+        isSolved = true;
+    }
 
-        #region OnEnable/Disable
-        void OnEnable()
-        {
-            gameControl.Enable();
-        }
-        void OnDisable()
-        {
-            gameControl.Disable();
-        }
-        #endregion
+    void OnEnable()
+    {
+        gameControl.Enable();
+    }
+
+    void OnDisable()
+    {
+        gameControl.Disable();
     }
 }
