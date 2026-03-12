@@ -3,52 +3,78 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] bool disableColOnInteract = true;
+    [Header("Settings")] [SerializeField] bool disableColOnInteract = true;
     [SerializeField] bool neededForWin = true;
+    [SerializeField] int clickAmountToSolve = 1;
+    [SerializeField] bool debugReferenceMissing = false;
+
+    [Header("References")] [SerializeField]
+    GameObject starObj;
 
     [Tooltip("Will invoke onSolved if null and clicked")] [SerializeField]
     GameObject uIObject;
 
-    [SerializeField] GameObject starObj;
     [SerializeField] UnityEvent onSolved;
+    [SerializeField] UnityEvent onInteracted;
+
     [SerializeField] UnityEvent onAnimPlayed;
-    [SerializeField] int clickAmountToSolve = 1;
+
     int clickAmount;
-    public bool solved { get; private set; }
+    bool isSolved;
 
     Collider2D col;
 
     void Awake()
     {
         col = GetComponent<Collider2D>();
-        if (neededForWin)
+
+        if (neededForWin && ValidateReference(GameStateManager.Instance))
+        {
             GameStateManager.Instance.SubscribeInteractable(this);
+        }
     }
 
     public void OnInteract()
     {
-        if (!uIObject)
-        {
-            OnSolved();
-        }
-        else if (uIObject.activeInHierarchy)
+        if (!CanBeSolved()) return;
+        
+        onInteracted?.Invoke();
+
+        if (ValidateReference(uIObject))
         {
             uIObject.SetActive(false);
-            OnSolved();
         }
+
+        TrySolve();
     }
 
-    void OnSolved()
+    public GameObject GetUIObject()
     {
-        solved = true;
-        starObj.SetActive(false);
+        return uIObject;
+    }
+
+    public void OnHover(bool isHovering)
+    {
+        bool shouldShow = isHovering && CanBeSolved();
+        SetActiveHighlight(shouldShow);
+    }
+
+    void TrySolve()
+    {
+        clickAmount++;
+        
+        if (clickAmount < clickAmountToSolve) return;
+
+        Solve();
+    }
+
+    void Solve()
+    {
+        isSolved = true;
+        SetActiveHighlight(false);
         onSolved?.Invoke();
 
-        clickAmount++;
-        if (clickAmount >= clickAmountToSolve)
-        {
-            GameStateManager.Instance.DesubscribeInteractable(this);
-        }
+        GameStateManager.Instance.DesubscribeInteractable(this);
 
         if (disableColOnInteract)
         {
@@ -56,39 +82,16 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    public GameObject GetUIObject()
+    bool CanBeSolved()
     {
-        if (CheckAssigned(uIObject))
-            return uIObject;
-        else
-            return null;
+        return !ValidateReference(uIObject) || uIObject.activeInHierarchy;
     }
 
-    public bool CheckAssigned(GameObject obj)
+    void SetActiveHighlight(bool condition)
     {
-        if (obj != null)
-            return true;
-        else
-        {
-            //Debug.Log("Has no assigned Interactable", gameObject);
-            return false;
-        }
-    }
+        if (!ValidateReference(starObj)) return;
 
-    public void OnHover(bool state)
-    {
-        if (!state)
-        {
-            starObj.SetActive(false);
-            return;
-        }
-
-        if (GetUIObject() == null)
-        {
-            starObj.SetActive(true);
-        }
-        else if (uIObject.activeInHierarchy)
-            starObj.SetActive(true);
+        starObj.SetActive(condition);
     }
 
     public void AnimFinished()
@@ -99,5 +102,22 @@ public class Interactable : MonoBehaviour
     public void SetUIObj(GameObject newUIObj)
     {
         uIObject = newUIObj;
+    }
+
+    public bool GetIsSolved()
+    {
+        return isSolved;
+    }
+
+    bool ValidateReference(Object obj)
+    {
+        if (obj != null) return true;
+
+        if (debugReferenceMissing)
+        {
+            Debug.Log($"[{gameObject.name}] No reference in {nameof(Interactable)} component!", this);
+        }
+
+        return false;
     }
 }

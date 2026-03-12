@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8472e14a-0aca-4262-aff2-43a993168531" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/PickupItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/PickupItem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JustASpoonful_GIT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JustASpoonful_GIT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/GameStateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/GameStateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/IPickupable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/IPickupable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/Pickupable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++workdata/scripts/InteractLifecycle/Pickupable.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773343926375</updated>
-      <workItem from="1773343929317" duration="3178000" />
+      <workItem from="1773343929317" duration="6792000" />
     </task>
     <servers />
   </component>

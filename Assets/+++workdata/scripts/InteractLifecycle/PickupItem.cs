@@ -39,11 +39,11 @@ public class PickupItem : MonoBehaviour
 
     public void Drop()
     {
-        bool shouldBeVisible = !interactable.solved || reenableVisualAfterSolved;
+        bool shouldBeVisible = !interactable.GetIsSolved() || reenableVisualAfterSolved;
 
         SetWorldObjectVisible(shouldBeVisible);
 
-        if (interactable.solved)
+        if (interactable.GetIsSolved())
         {
             col.enabled = false;
         }
@@ -94,7 +94,7 @@ public class PickupItem : MonoBehaviour
     {
         if (obj != null) return true;
 
-        Debug.LogWarning($"[{gameObject.name}] Missing reference in Collectible component!", this);
+        Debug.LogWarning($"[{gameObject.name}] Missing reference in {nameof(PickupItem)} component!", this);
         return false;
     }
 }
