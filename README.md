@@ -31,6 +31,7 @@ This Project has 2 complete Code refactors behind it and is sometimes taken for 
 - Release date: 06.07.2022
 - Unity Version: 6000.3.10f1
 - Team Size: 3
+- The overall work time is roughly 14 weeks
 
 ## Packages: 
 - [Deadcows Mybox](https://github.com/Deadcows/MyBox.git) (Editor Utils and Handy Extension Methods)
